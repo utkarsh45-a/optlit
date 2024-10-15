@@ -9,7 +9,7 @@ export const primary = "linear-gradient(to right, #2196f3, #00bcd4)"   //blue
 
 
 
-// we use this for giving instruction to user when any event occour(like registration succesfull , failed, etc).
+// we use this for giving instruction to user when any event occur(like registration successful , failed, etc).
 
 export const shToast = (text, bgColor, color = "white") => {
 
@@ -36,16 +36,14 @@ export const shToast = (text, bgColor, color = "white") => {
 
 /* 
 
-instruction for using this toast 
+Instruction For Using This Toast:
 
-1 - your js file type must be module in your html page for eg - (<script type="module" src="/scripts/login.js"></script>)
+1) Your js file type must be module in your html page for example - (<script type="module" src="/scripts/login.js"></script>).
 
-2 - in your js file import shToast function and one bgColor according to your need from module / toast.js, eg(import { shToast, danger } from "../modules/toast")
+2) In your js file import shToast function and one bgColor according to your need from module / toast.js, eg(import { shToast, danger } from "../modules/toast").
 
-3 - call shToast() function when any event occour
+3) Call shToast() function when any event occur.
 
-4 - shToast() function takes 3 parameter(1 - Message, 2 - bgColor, 3 - textColor), 3rd one is optional.eg(shToast("login form not availabe", danger, "black"))
-
-for better understanding check login.js & login.html file
+4) shToast() function takes 3 parameter(1 - Message, 2 - bgColor, 3 - textColor), 3rd one is optional.eg(shToast("login form not available", danger, "black")) for better understanding check login.js & login.html file.
 
 */
