@@ -1,5 +1,14 @@
-After Setting Up This Project Open Your VS Code Terminal & Do This Steps:
+After Setting Up This Project Open Your VS Code Terminal & follow these Steps:
 
-1- Type "npm i" and press enter it initialize your project with all dependencies that we use in our project & create a folder node_modules currently our project is dependent on (bootstrap and toastify-js) you can check it in package.json file.
+1- download node js , for this project we need a package manager called npm & it comes with node js . 
 
-2- Type "npm run dev" in your terminal it run your project locally.
+2- after installing node js verify the installation by cmd, open cmd and type "npm -v" and press ENTER. 
+
+3- After verifying it open vs code terminal in your minorPorject & Type "npm i" and press ENTER. 
+
+ it initialize your project with all dependencies that we use in our project & create a folder named node_modules currently our project is dependent on (bootstrap and toastify-js) you can check it in package.json file.
+
+ 
+
+!!! after doing all these steps read README.md file. !!!
+
