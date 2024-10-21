@@ -60,7 +60,7 @@
         min-height: 100vh;
         padding: 20px;
         color: black;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: -200px;
         display: block;
