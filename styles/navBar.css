@@ -1,0 +1,84 @@
+.nav-bar {
+    background-color: azure;
+}
+
+.nav-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.nav-lists {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+}
+
+.nav-lists li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-lists li {
+    position: relative;
+}
+
+.nav-lists li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: black;
+    color: black;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    transition: .2s;
+}
+
+.nav-lists li:hover::after {
+    width: 100%;
+}
+
+.nav-lists li a.active {
+    color: black;
+}
+
+.menu {
+    display: none;
+}
+
+/* -------------------media query for smaller width-------------------- */
+
+@media (max-width:770px) {
+    .nav-bar {
+        background-color: azure;
+    }
+
+    .nav-lists {
+        width: 200px;
+        min-height: 100vh;
+        padding: 20px;
+        color: black;
+        position: absolute;
+        top: 0;
+        right: -200px;
+        display: block;
+        background-color: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.7));
+        backdrop-filter: blur(2px);
+        box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.5);
+        transition: .2s;
+    }
+
+    .nav-lists li {
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu-close {
+        margin-bottom: 40px;
+    }
+}
