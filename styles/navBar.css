@@ -90,4 +90,8 @@
     .menu-close {
         margin-bottom: 40px;
     }
+
+    .btn-size {
+        font-size: 12px;
+    }
 }
