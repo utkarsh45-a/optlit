@@ -1,0 +1,39 @@
+.contact-container {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+.get-in-touch {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+.send-msg {
+    width: 50%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+
+
+
+
+
+
+/* media query for responsiveness */
+
+@media (max-width:770px) {
+    .contact-container {
+        flex-direction: column-reverse;
+    }
+
+    .get-in-touch {
+        width: 100%;
+    }
+
+    .send-msg {
+        width: 100%;
+    }
+}
