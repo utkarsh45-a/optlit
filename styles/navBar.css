@@ -1,3 +1,5 @@
+/* header */
+
 .nav-bar {
     background-color: #f5f5f5;
     /* Light gray background */
@@ -60,7 +62,7 @@
     display: none;
 }
 
-/* -------------------media query for smaller width-------------------- */
+/* -------------------media query for header-------------------- */
 
 @media (max-width:770px) {
 
@@ -93,5 +95,139 @@
 
     .btn-size {
         font-size: 12px;
+    }
+}
+
+
+/* footer  */
+
+/* Footer Section */
+
+
+.footer {
+    background-color: #292929;
+    color: #fff;
+    padding: 50px 20px;
+    margin-top: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    text-align: left;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col h4 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f5f5f5;
+    border-bottom: 2px solid #f5f5f5;
+    padding-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #bdbdbd;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+}
+
+.footer-col p,
+.footer-bottom p,
+.footer-bottom small {
+    color: #bdbdbd;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.social-row {
+    text-align: center;
+    margin: 30px 0 20px;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons li {
+    transition: transform 0.3s ease;
+}
+
+.social-icons li:hover {
+    transform: scale(1.15);
+}
+
+.social-icons li img {
+    width: 40px;
+    height: 40px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons li:hover img {
+    filter: grayscale(0);
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.footer-bottom p:hover,
+.footer-bottom small:hover {
+    color: #fff;
+}
+
+/* media query for footer  */
+
+@media (max-width: 768px) {
+    .footer-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-row {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-col {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom p,
+    .footer-bottom small {
+        font-size: 0.75rem;
     }
 }
