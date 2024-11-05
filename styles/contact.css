@@ -1,38 +1,94 @@
+/* Contact Container */
 .contact-container {
     width: 100%;
     height: calc(100vh - 100px);
     display: flex;
+    margin: 20px 0;
 }
 
+/* Get In Touch Section */
 .get-in-touch {
     width: 50%;
     height: 100%;
-    background-color: red;
+    padding: 40px;
+    background-color: #f8f8f8;
 }
 
+.get-in-touch h1 {
+    margin-bottom: 20px;
+}
+
+.get-in-touch p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Contact Item Styling */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    border-radius: 50%;
+    border: 1px solid orangered;
+    background-color: orangered;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.contact-text h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Follow Us Section */
+.follow {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.follow .icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+}
+
+/* Send Message Section */
 .send-msg {
     width: 50%;
     height: 100%;
     background-color: aquamarine;
 }
 
-
-
-
-
-
-
-/* media query for responsiveness */
-
-@media (max-width:770px) {
+/* Media Query for Responsiveness */
+@media (max-width: 770px) {
     .contact-container {
         flex-direction: column-reverse;
     }
 
-    .get-in-touch {
-        width: 100%;
-    }
-
+    .get-in-touch,
     .send-msg {
         width: 100%;
     }
