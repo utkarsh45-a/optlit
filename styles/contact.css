@@ -16,13 +16,15 @@
 
 .send-msg {
     background-color: #f8f8f8;
-    padding: 40px;
+    /* padding: 40px; */
     border-radius: 10px;
     width: 50%;
-    height: 100%;
+    /* height: 100%; */
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
+    display: flex;
+    padding: 20px;
 }
 
 .get-in-touch h1 {
@@ -112,28 +114,30 @@ h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
+
 /*--------------------Anushka---------------------------------------------------------------------------------------------------------*/
 .form_input {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     border: 1px solid #ffff;
     width: 90%;
     padding: 10px;
     margin: 10px 0;
-    border-radius:10px ;
+    border-radius: 10px;
     box-shadow:
-    rgba(17,17,26,0.1)
-    0px 1px 0px ;
+        rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
-.submit_button{
+
+.submit_button {
     background-color: orangered;
-    border-radius: 10px ;
-    padding:10px 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
     border: none;
 
 }
-.submit_button:hover{
+
+.submit_button:hover {
     cursor: pointer;
-    background-color: rgb(212, 60, 4) ;  
+    background-color: rgb(212, 60, 4);
 }
 
 
@@ -156,10 +160,11 @@ h3 {
     .send-msg {
         width: 100%;
     }
+
     .form_input {
         font-size: 1rem;
     }
-    
 
- 
+
+
 }
