@@ -78,9 +78,18 @@
     background-color: aquamarine;
 }
  
-h3{
+.follow_heading h3{
     margin-top:25px;
 }
+
+.contact-text p a{
+    text-decoration: none;
+    color:black;
+}
+.follow a{
+    color: black;
+}
+ 
 
 
 
