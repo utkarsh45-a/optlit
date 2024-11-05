@@ -12,6 +12,7 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
+
 <body>
     <!------- navbar------ -->
     <header>
@@ -72,7 +73,9 @@
                     </div>
                 </div>
 
-               <div class="follow_heading"> <h3>Follow Us:</h3></div>
+                <div class="follow_heading">
+                    <h3>Follow Us:</h3>
+                </div>
                 <div class="follow">
                     <a href="#">
                         <div class="icon"><i class="fab fa-twitter"></i></div>
@@ -94,18 +97,20 @@
                     <h2>Send a Message</h2>
                     <form>
 
-                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <input class="form_input" type="text" id="name" name="name" placeholder="Name" required>
 
 
-                        <input type="email" id="email" name="email" placeholder="E-mail address" required>
+                        <input class="form_input" type="email" id="email" name="email" placeholder="E-mail address"
+                            required>
 
-                        <textarea id="message" name="message" placeholder="Message" required rows="4"></textarea>
+                        <textarea class="form_input" id="message" name="message" placeholder="Message" required
+                            rows="4"></textarea>
                         <p class="note">
                             By submitting, you agree to the processing of your personal data as described in the
                             Message
                             Statement.
                         </p>
-                        <button type="submit">Submit</button>
+                        <div class="text-center"> <button class=" submit_button" type="submit">Submit</button></div>
                     </form>
                 </div>
             </div>
