@@ -1,7 +1,7 @@
 /* Contact Container */
 .contact-container {
     width: 100%;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
     display: flex;
     margin: 20px 0;
 }
@@ -18,7 +18,7 @@
 .send-msg {
     background-color: #f8f8f8;
     /* padding: 40px; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     width: 50%;
     /* height: 100%; */
     justify-content: center;
