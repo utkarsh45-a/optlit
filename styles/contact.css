@@ -14,6 +14,17 @@
     background-color: #f8f8f8;
 }
 
+.send-msg {
+    background-color: #f0f0f0;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
 .get-in-touch h1 {
     margin-bottom: 20px;
 }
@@ -77,16 +88,15 @@
 
 /* Send Message Section */
 .send-msg {
-    background-color: #f0f0f0;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 50%;
     height: 100%;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
+    background-color: aquamarine;
 }
+ 
+h3{
+    margin-top:25px;
+}
+
 
 .send-msg h2 {
     text-align: center;
@@ -99,29 +109,54 @@
 }
 
 .send-contanier {
-    width: 100%;
-    height: 95%;
+    /* width: 100%;
+    height: 95%; */
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
-
-.send-msg input,
-.send-msg textarea {
+/*--------------------Anushka---------------------------------------------------------------------------------------------------------*/
+.form_input {
+    font-size: 1.5rem;
+    border: 1px solid #ffff;
     width: 90%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    background-color: white;
+    margin: 10px 0;
+    border-radius:10px ;
+    box-shadow:
+    rgba(17,17,26,0.1)
+    0px 1px 0px ;
 }
 
+.send-msg button {
+    background-color: orangered;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 30%;
+    margin-left: 30%;
+    margin-top: 20px;
+}
 
+.note {
+    font-size: 1.1rem;
+    color: #646262;
+    text-align: center;
+    margin-top: 15px;
+}
 
-
-
+#name,
+#email,
+#message {
+    border-left: rgb(0, 0, 0);
+    border-right: black;
+    border-top: black;
+}
 
 
 /* media query for responsiveness */
@@ -135,25 +170,10 @@
     .send-msg {
         width: 100%;
     }
-
-    .send-contanier {
-        width: 99%;
-        height: 100%;
-        background-color: #ffffff;
-        border-radius: 20px;
-        padding: 30px;
+    .form_input {
+        font-size: 1rem;
     }
+    
 
-    .note {
-        font-size: .8rem;
-        color: #313030;
-        text-align: center;
-        margin-top: 2px;
-    }
-
-    .send-msg button {
-        margin-left: 50%;
-        width: 40%;
-        margin-bottom: 15px;
-    }
+ 
 }
