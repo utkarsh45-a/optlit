@@ -103,7 +103,7 @@
     }
 
     .logo a img {
-        width: 30vw;
+        width: 227px;
     }
 
     .nav-lists {
@@ -284,20 +284,5 @@
     .footer-bottom p,
     .footer-bottom small {
         font-size: 0.75rem;
-    }
-}
-
-
-/* media quesry for logo  */
-
-@media (max-width:500px) {
-    .logo a img {
-        width: 35vw;
-    }
-}
-
-@media (max-width:370px) {
-    .logo a img {
-        width: 45vw;
     }
 }
