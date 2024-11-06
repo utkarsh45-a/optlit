@@ -12,7 +12,7 @@
 }
 
 .logo a img {
-    width: 17vw;
+    width: 20vw;
 }
 
 .nav-route {
@@ -21,7 +21,7 @@
     gap: 12px;
     list-style: none;
     /* padding-right: 30px; */
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-bottom: 0;
 }
 
@@ -52,6 +52,8 @@
 
 .nav-lists li {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .nav-lists li::after {
@@ -62,7 +64,7 @@
     color: black;
     position: absolute;
     left: 0;
-    bottom: 12px;
+    bottom: 8px;
     transition: .2s;
 }
 
