@@ -29,7 +29,7 @@
     padding: 20px;
 }
 
-.get-in-touch h1 {
+.get-in-touch h2 {
     margin-bottom: 20px;
 }
 
@@ -84,28 +84,29 @@
     margin-top: 20px;
 }
 
+.follow a {
+    text-decoration: none;
+}
+
 .follow .icon {
     width: 40px;
     height: 40px;
     font-size: 1.2rem;
 }
 
-/* Send Message Section */
-
-
-h3 {
-    margin-top: 25px;
+.follow_heading h3 {
+    Margin-top: 25px;
 }
 
+.send-msg-heading {
+    text-align: center;
+}
 
-.send-msg h2 {
+.send-msg h1 {
     text-align: center;
     padding: 10px;
     font-size: 30px;
-    font-weight: 1.7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* font-weight: 1.7rem; */
 }
 
 .send-contanier {
@@ -116,6 +117,13 @@ h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
+
+.contact-text p a {
+    text-decoration: none;
+    color: black;
+}
+
+
 
 /*--------------------Anushka---------------------------------------------------------------------------------------------------------*/
 .form_input {
@@ -134,6 +142,7 @@ h3 {
     border-radius: 10px;
     padding: 10px 20px;
     border: none;
+    color: white;
 
 }
 
@@ -152,7 +161,7 @@ h3 {
 
 @media (max-width:770px) {
     .contact-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .get-in-touch {
@@ -166,7 +175,5 @@ h3 {
     .form_input {
         font-size: 1rem;
     }
-
-
 
 }

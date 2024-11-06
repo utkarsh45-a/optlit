@@ -11,6 +11,20 @@
     /* Subtle shadow for depth */
 }
 
+.logo a img {
+    width: 17vw;
+}
+
+.nav-route {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    /* padding-right: 30px; */
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
 .nav-item-container {
     display: flex;
     justify-content: space-between;
@@ -20,8 +34,10 @@
 
 .nav-lists {
     display: flex;
-    list-style: none;
-    gap: 12px;
+    width: 100%;
+    justify-content: space-between;
+    /* list-style: none; */
+    /* gap: 12px; */
 }
 
 .nav-lists li a {
@@ -46,7 +62,7 @@
     color: black;
     position: absolute;
     left: 0;
-    bottom: 1px;
+    bottom: 12px;
     transition: .2s;
 }
 
@@ -58,6 +74,15 @@
     color: black;
 }
 
+.nav-btns {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-btns .login {
+    margin-right: 10px;
+}
+
 .menu {
     display: none;
 }
@@ -65,6 +90,21 @@
 /* -------------------media query for header-------------------- */
 
 @media (max-width:770px) {
+
+    .nav-route {
+        right: 0px;
+        height: 100%;
+        /* justify-content: space-between; */
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .logo a img {
+        width: 30vw;
+    }
 
     .nav-lists {
         width: 200px;
@@ -74,11 +114,18 @@
         position: fixed;
         top: 0;
         right: -200px;
-        display: block;
+        /* display: block; */
         background-color: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.7));
         backdrop-filter: blur(2px);
         box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.5);
         transition: .2s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nav-lists ul {
+        margin: 0;
     }
 
     .nav-lists li {
@@ -211,6 +258,8 @@
 /* media query for footer  */
 
 @media (max-width: 768px) {
+
+
     .footer-row {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -229,5 +278,20 @@
     .footer-bottom p,
     .footer-bottom small {
         font-size: 0.75rem;
+    }
+}
+
+
+/* media quesry for logo  */
+
+@media (max-width:500px) {
+    .logo a img {
+        width: 35vw;
+    }
+}
+
+@media (max-width:370px) {
+    .logo a img {
+        width: 45vw;
     }
 }
