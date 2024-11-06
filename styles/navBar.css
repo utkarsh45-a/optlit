@@ -110,6 +110,7 @@
         width: 200px;
         min-height: 100vh;
         padding: 20px;
+        padding-bottom: 70px;
         color: black;
         position: fixed;
         top: 0;
@@ -129,7 +130,12 @@
     }
 
     .nav-lists li {
-        margin-bottom: 10px;
+        margin-bottom: 8px;
+    }
+
+    .nav-lists li::after {
+        bottom: -6px;
+        transition: .2s;
     }
 
     .menu {
