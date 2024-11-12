@@ -34,7 +34,7 @@ const chapters = [
     },
     {
         title: "chapter 7",
-        content: "sds",
+        content: "sdst",
         code: "asda"
     }
 ];
