@@ -4,30 +4,30 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - temp  # Jab 'temp' branch pe push karenge, yeh action trigger hoga.
+      - temp  # 'temp' branch par push hone par ye action trigger hoga.
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest  # Deployment ke liye GitHub Actions ka Ubuntu environment use hoga.
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v3  # Repository ko checkout karega taaki files available ho.
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Node.js version, aap isay apni requirement ke hisaab se update kar sakte hain.
+          node-version: '20'  # Updated to Node.js version 20
 
       - name: Install dependencies
-        run: npm install  # Dependencies install karega.
+        run: npm install
 
       - name: Build the project
-        run: npm run build  # Project ko build karega aur output 'dist' folder mein generate hoga.
+        run: npm run build  # 'dist' folder generate karega
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3  # GitHub Pages par deploy karne ke liye action use kiya gaya hai.
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token jo authentication ke liye use hoga.
-          publish_dir: ./dist  # Ye 'dist' folder ko GitHub Pages par publish karega.
-          target_branch: temp  # Ye target branch ko 'temp' set karta hai jahan aap deploy karna chahte hain.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: temp  # Use 'temp' as the target branch for deployment
