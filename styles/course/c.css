@@ -94,10 +94,6 @@
     border-radius: 4px;
 }
 
-.sidebar ul li a:hover {
-    background-color: #e0e0e0;
-    color: #007BFF;
-}
 
 
 .content {
@@ -146,6 +142,10 @@ pre code {
     justify-content: space-between;
 }
 
+#chapter-list li {
+    cursor: pointer;
+}
+
 .nav-button {
     background-color: #007bff;
     color: white;
@@ -169,5 +169,76 @@ pre code {
     .nav-button {
         width: 100%;
         margin: 5px 0;
+    }
+}
+
+
+/* ---------------------for practice question------------------------ */
+
+/* Practice Questions List Styling */
+#practice-questions-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#practice-questions-list li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    /* Light background for each question */
+    border: 1px solid #ddd;
+    /* Light border */
+    border-radius: 5px;
+}
+
+/* Button to Show Solution */
+.show-solution-btn {
+    background-color: #007bff;
+    /* Button background color */
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.show-solution-btn:hover {
+    background-color: #0056b3;
+    /* Hover effect */
+}
+
+/* Solution Display Box */
+.solution {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    /* Preserve whitespace */
+    display: none;
+    /* Hidden by default */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+
+    /* Stack content for smaller screens */
+    .main-content {
+        flex-direction: column;
+    }
+
+    #practice-questions-list li {
+        padding: 12px;
+    }
+
+    .show-solution-btn {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .solution {
+        padding: 8px;
     }
 }
