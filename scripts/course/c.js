@@ -1,17 +1,4 @@
-
-// Function to handle tab switching
-const tabs = document.querySelectorAll('.tabs ul li');
-const contents = document.querySelectorAll('.content');
-
-tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
-        tabs.forEach(tab => tab.classList.remove('active'));
-        tab.classList.add('active');
-
-        contents.forEach(content => content.classList.remove('active-content'));
-        contents[index].classList.add('active-content');
-    });
-});
+import { handleTabSwitching, renderChapters, setChapterLinkListeners } from "../../modules/chapterModule";
 
 // Define arrays for each chapter's content type
 const chapters = [
@@ -39,23 +26,20 @@ const chapters = [
         title: "Chapter 5: Arrays and Strings",
         content: "Learn about arrays and strings in C, which allow you to store multiple values in a single variable. This chapter covers array declaration, initialization, and basic operations.",
         code: `#include <stdio.h>\n\nint main() {\n  int arr[5] = {1, 2, 3, 4, 5};\n  for(int i = 0; i < 5; i++) {\n    printf("%d ", arr[i]);\n  }\n  char str[] = "Hello, World!";\n  printf("\\n%s", str);\n  return 0;\n}`
-    }, {
-        title: "chapter 6:",
-        content: "",
-        code: ""
+    },
+    {
+        title: "chapter 6:geg",
+        content: "erfe",
+        code: "ff"
+    },
+    {
+        title: "chapter 7",
+        content: "sds",
+        code: "asda"
     }
 ];
 
-//logic for sidebar 
-const chapterList = document.querySelector("#chapter-list")
-chapters.forEach((chapter, index) => {
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-    a.setAttribute("data-chapter", index)
-    a.innerText = chapter.title;
-    li.appendChild(a)
-    chapterList.appendChild(li)
-})
+
 
 const practiceQuestions = [
     {
@@ -180,77 +164,11 @@ const articles = [
     }
 ];
 
+// Initialize tab switching functionality
+handleTabSwitching();
 
-// Select chapter links and display content accordingly
-const chapterLinks = document.querySelectorAll('#chapter-list a');
-const chapterTitle = document.getElementById('chapter-title');
-const chapterContent = document.getElementById('chapter-content');
-const chapterCode = document.getElementById('chapter-code');
-const practiceQuestionsList = document.getElementById('practice-questions-list');
-const notesList = document.getElementById('notes-list');
-const articlesList = document.getElementById('articles-list');
+// Render chapters in the sidebar
+renderChapters(chapters);
 
-let currentChapterIndex = 0;
-
-// Load content for selected chapter
-function loadChapterContent(index) {
-    const chapter = chapters[index];
-    chapterTitle.textContent = chapter.title;
-    chapterContent.textContent = chapter.content;
-    chapterCode.textContent = chapter.code.trim();
-
-    //add active class in side bar chaptername
-    chapterLinks.forEach(link => link.classList.remove('active'));
-    chapterLinks[index].classList.add('active');
-
-    // Load practice questions with "Show Solution" feature
-    practiceQuestionsList.innerHTML = '';
-    practiceQuestions[index].questions.forEach(q => {
-        const li = document.createElement('li');
-        li.classList.add('practice-question');
-        li.innerHTML = `
-            <strong>${q.question}</strong><br/>
-            <button class="show-solution-btn">Show Solution</button>
-            <pre class="solution" style="display: none;"><code>${q.solution}</code></pre>
-        `;
-        practiceQuestionsList.appendChild(li);
-
-        // Add event listener for "Show Solution" button
-        const showSolutionBtn = li.querySelector('.show-solution-btn');
-        const solutionBox = li.querySelector('.solution');
-        showSolutionBtn.addEventListener('click', () => {
-            const isSolutionVisible = solutionBox.style.display === 'block';
-            solutionBox.style.display = isSolutionVisible ? 'none' : 'block';
-            showSolutionBtn.textContent = isSolutionVisible ? 'Show Solution' : 'Hide Solution';
-        });
-    });
-
-    // Load notes
-    notesList.innerHTML = '';
-    notes[index].notes.forEach(note => {
-        const li = document.createElement('li');
-        li.textContent = note;
-        notesList.appendChild(li);
-    });
-
-    // Load articles
-    articlesList.innerHTML = '';
-    articles[index].articles.forEach(article => {
-        const li = document.createElement('li');
-        li.textContent = article;
-        articlesList.appendChild(li);
-    });
-}
-
-// Set event listeners for chapter links
-chapterLinks.forEach((link, index) => {
-    link.addEventListener('click', () => {
-        loadChapterContent(index);
-        currentChapterIndex = index;
-    });
-});
-
-// Load the first chapter by default
-loadChapterContent(currentChapterIndex);
-
-
+// Set chapter link listeners
+setChapterLinkListeners(chapters, practiceQuestions, notes, articles);
