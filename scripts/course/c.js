@@ -164,11 +164,13 @@ const articles = [
     }
 ];
 
-// Initialize tab switching functionality
-handleTabSwitching();
+window.addEventListener("DOMContentLoaded", () => {
+    // Initialize tab switching functionality
+    handleTabSwitching();
 
-// Render chapters in the sidebar
-renderChapters(chapters);
+    // Render chapters in the sidebar
+    renderChapters(chapters);
 
-// Set chapter link listeners
-setChapterLinkListeners(chapters, practiceQuestions, notes, articles);
+    // Set chapter link listeners
+    setChapterLinkListeners(chapters, practiceQuestions, notes, articles);
+})
