@@ -2,5 +2,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-	base: '/minorProject/', // Update with your repo name
+	// base: '/minorProject/', // Update with your repo name
 })
