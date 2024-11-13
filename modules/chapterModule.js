@@ -46,7 +46,7 @@ export function loadChapterContent(
 	const chapterLinks = document.querySelectorAll('#chapter-list a');
 
 	const chapter = chapters[index];
-	chapterTitle.textContent = chapter.title;
+	chapterTitle.innerHTML = chapter.title;
 	chapterContent.textContent = chapter.content;
 	chapterCode.textContent = chapter.code.trim();
 
