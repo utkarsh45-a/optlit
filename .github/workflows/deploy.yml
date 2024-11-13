@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3  # Updated to v3 for support with Node.js 20
+        uses: actions/checkout@v3  # This version will work fine with Node.js 20
 
       - name: Setup Node
-        uses: actions/setup-node@v4  # Updated to v4 for Node.js 20 support
+        uses: actions/setup-node@v4  # Use v4 to avoid deprecation with Node.js 20
         with:
           node-version: 18
 
@@ -39,10 +39,10 @@ jobs:
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v2  # This version is fine for now
+        uses: actions/download-artifact@v2  # This version is still fine
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3  # This action should be fine, no need to update
+        uses: peaceiris/actions-gh-pages@v3  # This version is still fine
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
