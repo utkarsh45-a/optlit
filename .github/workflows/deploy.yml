@@ -1,46 +1,29 @@
-name: Deploy
+# .github/workflows/deploy.yml
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - temp
+      - temp  # Main branch pe push hone pe ye trigger hoga. Isay apni default branch ke naam se replace karein.
 
 jobs:
-  build:
-    name: Build
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout the repository
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Node.js version, aap isay update bhi kar sakte hain
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm install
 
-      - name: Build project
+      - name: Build the project
         run: npm run build
-
-      - name: Upload production-ready build files
-        uses: actions/upload-artifact@v3
-        with:
-          name: production-files
-          path: ./dist
-
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: production-files
-          path: ./dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
