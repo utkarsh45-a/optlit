@@ -1,5 +1,5 @@
 
-// Function to handle tab switchingg
+// Function to handle tab switching
 export function handleTabSwitching() {
 	const tabs = document.querySelectorAll('.tabs ul li');
 	const contents = document.querySelectorAll('.content');
