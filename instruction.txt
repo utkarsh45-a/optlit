@@ -11,4 +11,11 @@ After Setting Up This Project Open Your VS Code Terminal & follow these Steps:
 
  
 
+<<<<<<< HEAD
 !!! after doing all these steps read README.md file. !!!
+=======
+!!! after doing all these steps read README.md file. !!!
+
+--string to html converter--
+https://wordtohtml.net/site/index
+>>>>>>> 6daea5c1b9485d0971e3be5cb7f7db3705d2092a

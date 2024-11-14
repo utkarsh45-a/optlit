@@ -23,7 +23,7 @@ export function renderChapters(chapters) {
 		const li = document.createElement("li");
 		const a = document.createElement("a");
 		a.setAttribute("data-chapter", index);
-		a.innerText = chapter.title;
+		a.innerHTML = chapter.title;
 		li.appendChild(a);
 		chapterList.appendChild(li);
 	});
@@ -47,7 +47,7 @@ export function loadChapterContent(
 
 	const chapter = chapters[index];
 	chapterTitle.innerHTML = chapter.title;
-	chapterContent.textContent = chapter.content;
+	chapterContent.innerHTML = chapter.content;
 	chapterCode.textContent = chapter.code.trim();
 
 	// Add active class in sidebar chapter name

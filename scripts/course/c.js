@@ -4,7 +4,34 @@ import { handleTabSwitching, renderChapters, setChapterLinkListeners } from "/mi
 const chapters = [
     {
         title: "Chapter 1: Introduction to C",
-        content: "This chapter introduces you to the C programming language, its history, and its applications.",
+        content: `<p><strong>Overview of C Language</strong>:<br>C is a high-level programming language used for system and application software. It is powerful, fast, and has a simple syntax, making it popular for writing operating systems, embedded systems, and more.</p>
+<p><strong>History of C</strong>:<br>C was developed by Dennis Ritchie in the 1970s at Bell Labs. It evolved from an earlier language called B and became one of the most influential programming languages.</p>
+<p><strong>Structure of a C Program</strong>:<br>A C program consists of several key parts:</p>
+<ul>
+    <li><strong>Header files</strong>: Contain pre-defined functions, like <code>#include &lt;stdio.h&gt;</code> for input/output functions.</li>
+    <li><strong>Main function</strong>: This is the entry point of the program, where execution starts. It&rsquo;s written as <code>int main() { }</code>.</li>
+    <li><strong>Body</strong>: Inside the main function, you&apos;ll write your code to perform specific tasks.</li>
+</ul>
+<p><strong>Writing and Executing a Basic C Program</strong>:</p>
+<ol>
+    <li>Write the C code in a text editor.</li>
+    <li>Save it with a <code>.c</code> extension.</li>
+    <li>Compile it using a C compiler (e.g., <code>gcc</code>).</li>
+    <li>Execute the compiled file to see the output.</li>
+</ol>
+<p><strong>Compiling and Debugging C Programs</strong>:</p>
+<ul>
+    <li><strong>Compiling</strong>: Converts the C code into machine-readable code. Use <code>gcc</code> (GNU Compiler Collection) or similar tools.</li>
+    <li><strong>Debugging</strong>: Helps find and fix errors in the code. Use debugging tools like <code>gdb</code> or IDE features to step through the code and track down issues.</li>
+</ul>
+<hr>
+<h3>Example Code:</h3>
+<p>To compile and run:</p>
+<ol>
+    <li>Save the code as <code>program.c</code>.</li>
+    <li>Compile with: <code>gcc program.c -o program</code>.</li>
+    <li>Run with: <code>./program</code>.</li>
+</ol>`,
         code: `#include <stdio.h>\n\nint main() {\n  printf("Hello, World!");\n  return 0;\n}`,
     },
     {
