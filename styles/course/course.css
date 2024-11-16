@@ -11,12 +11,13 @@
     margin-top: 10px;
     background-color: #f8f9fa;
     padding: 10px;
+    /* color: greenyellow; */
 }
 
 .tabs ul {
     display: flex;
     flex-wrap: wrap;
-    /* margin: 0; */
+    /* margin: 10; */
     justify-content: center;
     list-style-type: none;
     padding: 0;
