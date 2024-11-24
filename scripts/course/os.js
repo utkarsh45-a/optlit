@@ -260,9 +260,10 @@ const chapters = [
 </head>
 <body>
 
-    <h1>File Systems and Algorithms</h1>
+    <br><h4>File Systems and Algorithms</h4>
+    <br>
 
-    <h2>1. File Concepts and Access Methods</h2>
+    <h5>1. File Concepts and Access Methods</h6>
     <p><strong>File Concept:</strong> A file is a collection of data stored on a computer. It can contain text, images, videos, or programs. Files are named and organized in a system for easy access and management.</p>
 
     <p><strong>Access Methods:</strong> These define how data in a file is read or written. Common access methods include:</p>
@@ -270,29 +271,29 @@ const chapters = [
         <li><strong>Sequential Access:</strong> Data is read or written in order, from start to end (like reading a book).</li>
         <li><strong>Direct Access:</strong> Allows jumping to any part of the file directly (like finding a specific page in a book using an index).</li>
     </ul>
-
-    <h2>2. Directory Structures</h2>
+<br>
+    <h5>2. Directory Structures</h5>
     <p><strong>Directory Structure:</strong> It's the way files are organized and stored in the system. Directories (also called folders) are used to group files for easier management.</p>
     <ul>
         <li><strong>Single-level Directory:</strong> All files are stored in one list.</li>
         <li><strong>Two-level Directory:</strong> A directory for each user and another for files.</li>
         <li><strong>Hierarchical Directory:</strong> Directories are nested within other directories, forming a tree-like structure for better organization.</li>
     </ul>
-
-    <h2>3. File System Mounting and Sharing</h2>
+<br>
+    <h5>3. File System Mounting and Sharing</h5>
     <p><strong>Mounting:</strong> It’s the process of making a file system available for use by linking it to the directory structure of the OS, making it accessible. Example: When you plug in a USB drive, the OS mounts it so you can access the files.</p>
 
     <p><strong>Sharing:</strong> Allows multiple users or systems to access the same files. This can be done through network file systems or file sharing protocols, letting different systems or users access the same data.</p>
-
-    <h2>4. File Allocation Methods</h2>
+<br>
+    <h5>4. File Allocation Methods</h5>
     <p>These are the ways the operating system stores files on a disk.</p>
     <ul>
         <li><strong>Contiguous Allocation:</strong> Files are stored in consecutive blocks. It’s fast to access, but if a file grows, it may need to be moved to a new location.</li>
         <li><strong>Linked Allocation:</strong> Each file is stored in non-contiguous blocks, but each block points to the next block in the file. It’s flexible but slower to access due to the need to follow links.</li>
         <li><strong>Indexed Allocation:</strong> A special index block stores the addresses of all the blocks of a file. It’s efficient and avoids fragmentation, allowing fast access.</li>
     </ul>
-
-    <h2>5. Disk Scheduling Algorithms</h2>
+<br>
+    <h5>5. Disk Scheduling Algorithms</h5>
     <p>These algorithms determine the order in which disk requests are processed. The goal is to optimize the time taken to read or write data.</p>
     <ul>
         <li><strong>FCFS (First Come, First Served):</strong> The disk processes requests in the order they arrive, simple but not always efficient.</li>
@@ -306,20 +307,81 @@ const chapters = [
         
     },
     {
-        title: "Chapter 5: ",
-        content: ``,
+        title: "Chapter 5:Input/Output Management ",
+        content: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Architecture Concepts</title>
+</head>
+<body>
+   <br> <h4>Computer Architecture Concepts</h4>
+<br>
+    <h5>1. I/O Devices and Controllers</h5>
+    <p><strong>I/O Devices</strong> (Input/Output Devices) are hardware that allow communication between a computer and the outside world. They can be input devices (like a keyboard or mouse) or output devices (like a monitor or printer).</p>
+    <p><strong>I/O Controllers</strong> are circuits or chips that manage data transfer between the computer's CPU (central processing unit) and I/O devices. They act as intermediaries, making sure data is sent to and from devices correctly.</p>
+<br>
+    <h5>2. Device Drivers</h5>
+    <p>A <strong>Device Driver</strong> is software that tells the computer how to communicate with a specific I/O device (like a printer or a keyboard). It acts as a translator, allowing the operating system (OS) and applications to use hardware without needing to understand all the details of the hardware itself.</p>
+<br>
+    <h5>3. Interrupt Handling</h5>
+    <p><strong>Interrupt Handling</strong> is a method the computer uses to manage events that need immediate attention. When an event happens (like pressing a key on a keyboard), it "interrupts" the normal flow of the CPU to handle the event. The CPU stops what it's doing, runs a special program called an <strong>interrupt service routine</strong> (ISR), and then continues what it was doing before the interrupt.</p>
+<br>
+    <h5>4. DMA (Direct Memory Access)</h5>
+    <p><strong>DMA</strong> allows certain hardware devices (like hard drives or sound cards) to directly transfer data to and from the computer's memory, without involving the CPU. This frees up the CPU to do other tasks while data is being transferred, improving system performance, especially for large data transfers.</p>
+</body>
+</html>`,
     
     },
     {
-        title: "chapter 6:",
-        content: "",
+        title: "Chapter 6: Security and Protection",
+        content: ` <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Concepts</title>
+   
+</head>
+<body>
+<br>
+    <h4>Security Concepts</h4>
+<br>
+    <h5>1. Access Control and Permissions</h5>
+    <p>Access control refers to the methods used to manage who can access certain resources in a system, like files, data, or devices. Permissions are the specific rights or rules given to users to either view, modify, or delete resources. For example, a file might have "read-only" permission for some users (they can only view it) and "read-write" permission for others (they can edit it).</p>
+<br>
+    <h5>2. Authentication Methods</h5>
+    <p>Authentication is the process of verifying who you are before accessing a system. Common methods include:</p>
+    <ul>
+        <li><strong>Password:</strong> A secret word or phrase you enter to prove your identity.</li>
+        <li><strong>Biometrics:</strong> Using physical characteristics like fingerprints or face scans.</li>
+        <li><strong>Two-Factor Authentication (2FA):</strong> Combining something you know (like a password) with something you have (like a phone to receive a code).</li>
+    </ul>
+<br>
+    <h5>3. Threats: Malware, Viruses, etc.</h5>
+    <p>Threats are risks that can harm computer systems and data. Some common types of threats include:</p>
+    <ul>
+        <li><strong>Malware:</strong> Malicious software designed to harm or exploit systems (e.g., spyware, ransomware).</li>
+        <li><strong>Viruses:</strong> A type of malware that spreads by attaching itself to files or programs.</li>
+        <li><strong>Phishing:</strong> Fraudulent attempts to get sensitive information by pretending to be trustworthy sources (like fake emails).</li>
+    </ul>
+<br>
+    <h5>4. Security Mechanisms: Firewalls, Intrusion Detection</h5>
+    <p><strong>Firewalls:</strong> These act as barriers between a trusted network and potential threats from the internet. They filter incoming and outgoing traffic to block malicious activity.</p>
+    <p><strong>Intrusion Detection Systems (IDS):</strong> These monitor network traffic for signs of harmful actions or intrusions. When suspicious activity is detected, an alert is raised so that security teams can respond.</p>
+
+</body>
+</html>
+`,
         
     },
-    {
-        title: "chapter 7",
-        content: "",
+    // {
+    //     title: "chapter 7:",
+    //     content: "",
         
-    }
+    // },
+  
 ];
 
 
@@ -335,60 +397,319 @@ const practiceQuestions = [
             },
             {
                 question: "2. How does an OS manage hardware and software resources?",
-                solution: `#include <stdio.h>\n\nint main() {\n  int a, b;\n  printf("Enter two numbers: ");\n  scanf("%d %d", &a, &b);\n  printf("Sum: %d", a + b);\n  return 0;\n}`
-            }
+                solution: `Answer: The OS controls and allocates resources like CPU, memory, and storage to ensure smooth operation of programs and applications. It also provides an interface for users and applications to interact with hardware components.
+`
+            },
+            {
+                question:"3. What is the difference between a Batch OS and a TimeSharing OS?",
+                solution: `Answer: A Batch OS processes jobs in groups without user interaction, while a TimeSharing OS allows multiple users to share resources simultaneously by switching between tasks quickly, giving the illusion of simultaneous execution.`
+            },
+            {
+                question:"4. What tasks does the Kernel handle in an Operating System? ",
+                solution: `Answer: The Kernel is the core part of the OS and handles tasks such as process management, memory management, and device handling. It interacts directly with hardware and ensures system resources are efficiently managed.`
+            },
+            {
+                question:"5. What is a system call, and why is it important? ",
+                solution: `Answer: A system call is a mechanism that allows a program to request services from the OS. It serves as an interface between user space and the kernel, enabling programs to perform tasks like opening files, reading or writing data, and creating processes.`
+            },
+            {
+                question:"6. What is the purpose of User space in an Operating System?",
+                solution: `Answer: User space is where user applications and programs run. It has restricted access to system resources to ensure security and stability, preventing unauthorized or harmful interactions with the hardware.`
+            },
+            {
+                question:"7. What are some examples of real-time operating systems (RTOS) and where are they used?",
+                solution: `Answer: Examples of real-time operating systems include RTOS and VxWorks. They are typically used in systems with strict time constraints, such as embedded systems and robotics, where immediate processing and responses are critical.
+`
+            },
         ]
     },
     {
         chapterIndex: 1,
         questions: [
             {
-                question: "Write a program that declares an integer, a float, and a char, and prints them.",
-                solution: `#include <stdio.h>\n\nint main() {\n  int x = 10;\n  float y = 3.14;\n  char z = 'A';\n  printf("%d %f %c", x, y, z);\n  return 0;\n}`
+                question: "1. What is a process in an operating system? ",
+                solution: `Answer: A process is a program in execution that includes the program code, data, stack, and heap. `
             },
             {
-                question: "Write a program to calculate the area of a rectangle given its length and width.",
-                solution: `#include <stdio.h>\n\nint main() {\n  float length, width;\n  printf("Enter length and width: ");\n  scanf("%f %f", &length, &width);\n  printf("Area: %f", length  width);\n  return 0;\n}`
+                question: "2. What are the components of a process? ",
+                solution:  `Answer: The components of a process include the program code, data, stack, heap, and the Process Control Block (PCB). `
+            },
+            {
+                question: "3. What is the difference between a process and a thread? ",
+                solution: `Answer: A process is an independent unit of execution with its own resources, while a thread is the smallest unit of execution within a process that shares resources with other threads of the same process. `
+
+            },
+            {
+                question: "4. What is the First-Come-First-Served (FCFS) scheduling algorithm? ",
+                solution: `Answer: FCFS schedules processes in the order they arrive, but it may cause long processes to delay short ones. `
+            },
+            {
+                question: " 5. What is Round Robin (RR) scheduling?",
+                solution: `Answer: RR assigns a fixed time slice to each process and cycles through them. If a process doesn't finish, it's placed back in the queue. `
+            },
+            {
+                question: "6. What is context switching? ",
+                solution: `Answer: Context switching is saving the state of the current process and restoring the state of the next process to enable multitasking. `
+            },
+            {
+                question: " 7. What is Interprocess Communication (IPC)?",
+                solution: `Answer: IPC allows processes to communicate and synchronize their actions through methods like pipes, message queues, and shared memory. `
+            },
+            {
+                question: " 8. What is a deadlock in an operating system?",
+                solution: `Answer: A deadlock occurs when two or more processes are stuck in a circular wait, unable to progress.`
+            },
+            {
+                question: "9. What are the conditions for a deadlock to occur? ",
+                solution: `Answer: The Coffman conditions for deadlock are Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait.`
+            },
+            {
+                question: " 10. What is deadlock avoidance in an operating system?",
+                solution: `Answer: Deadlock avoidance ensures that the system never enters an unsafe state by checking resource allocation, like using the Banker's Algorithm.`
+            },
+            {
+                question: "11. How can deadlocks be prevented?",
+                solution: `Answer: Deadlocks can be prevented by avoiding the Coffman conditions, such as requiring processes to request all resources at once or following a specific order when requesting resources.
+
+`
             }
         ]
     },
     {
         chapterIndex: 2,
         questions: [
+
+
             {
-                question: "Write a program to check if a number is even or odd using if-else.",
-                solution: `#include <stdio.h>\n\nint main() {\n  int num;\n  printf("Enter a number: ");\n  scanf("%d", &num);\n  if(num % 2 == 0) {\n    printf("Even");\n  } else {\n    printf("Odd");\n  }\n  return 0;\n}`
+                question: " 1. What is contiguous memory allocation?",
+                solution: `Answer: It gives a process a single, continuous block of memory, which can lead to fragmentation. `
             },
             {
-                question: "Create a program that uses a for loop to print numbers from 1 to 10.",
-                solution: `#include <stdio.h>\n\nint main() {\n  for(int i = 1; i <= 10; i++) {\n    printf("%d\\n", i);\n  }\n  return 0;\n}`
-            }
+                question: " 2. What is non-contiguous memory allocation?",
+                solution: `Answer: It splits a process into chunks stored in different parts of memory, helping to avoid fragmentation. `
+            },
+            {
+                question: " 3. What is the issue with contiguous memory allocation? ",
+                solution: `Answer:  It can cause fragmentation, where free memory is scattered and cannot be effectively used.`
+            },
+            {
+                question: " 4. What is paging in memory management?",
+                solution: `Answer:  Paging divides memory and processes into fixed-size blocks called pages, which can be placed anywhere in memory. `
+            },
+            {
+                question: " 5. What is a page table?",
+                solution: `Answer:A page table keeps track of where each page of a process is located in memory. `
+            },
+            {
+                question: " 6. What is segmentation?",
+                solution: `Answer: Segmentation divides a process into logical parts, like code or data, with different sizes for each segment.`
+            },
+            {
+                question: " 7. How does virtual memory work?",
+                solution: `Answer: Virtual memory combines RAM and disk space to make it seem like there is more memory available. `
+            },
+            {
+                question: " 8. What happens when physical memory is full? ",
+                solution: `Answer: When RAM is full, parts of a program are moved to disk (swap space) to free up space in memory.
+`
+            },
+            {
+                question: " 9. What is the FIFO page replacement algorithm? ",
+                solution: `Answer: FIFO replaces the oldest page in memory when a new page needs to be loaded. `
+            },
+            {
+                question: " 10. What is the LRU page replacement algorithm?",
+                solution: `Answer: LRU replaces the page that has not been used for the longest time, keeping frequently used pages in memory.
+`
+            },
+            {
+                question: "11. What is the optimal page replacement algorithm? ",
+                solution: `Answer: The optimal algorithm replaces the page that will not be used for the longest time, but it is impractical because it needs to know future page accesses.`
+            },
+            {
+                question: "12. What is swapping in memory management? ",
+                solution: `Answer: Swapping moves a process from RAM to disk to free up memory, then brings it back when needed. `
+            },
+
+
+
         ]
     },
     {
-        chapterIndex: 3, // Chapter 4: Functions
+        chapterIndex: 3, // Chapter 4: File System
         questions: [
+
             {
-                question: "Write a program with a function that takes two integers and returns their sum.",
-                solution: `#include <stdio.h>\n\nint add(int a, int b) {\n  return a + b;\n}\n\nint main() {\n  int x = 5, y = 10;\n  printf("Sum: %d", add(x, y));\n  return 0;\n}`
+                question: "1. What is a file? ",
+                solution: `Answer: A file is a collection of data stored on a computer, like text, images, videos, or programs. `
             },
             {
-                question: "Create a program with a function that calculates the factorial of a number provided by the user.",
-                solution: `#include <stdio.h>\n\nint factorial(int n) {\n  if(n == 0) return 1;\n  return n * factorial(n - 1);\n}\n\nint main() {\n  int num;\n  printf("Enter a number: ");\n  scanf("%d", &num);\n  printf("Factorial: %d", factorial(num));\n  return 0;\n}`
-            }
+                question: " 2. What is sequential access?",
+                solution: `Answer: Sequential access means reading or writing data in order, from start to end.`
+            },
+            {
+                question: " 3. What is direct access?",
+                solution: `Answer: Direct access allows jumping to any part of the file directly, like using an index in a book.`
+            },
+            {
+                question: " 4. What is a directory structure?",
+                solution: `Answer:  A directory structure is how files are organized in the system, usually in folders for easier management.`
+            },
+            {
+                question: " 5. What is a single-level directory?",
+                solution: `Answer: A single-level directory stores all files in one list, without subdirectories.`
+            },
+            {
+                question: " 6. What is a two-level directory? ",
+                solution: `Answer: A two-level directory has one directory for each user and another for storing files.`
+            },
+            {
+                question: " 7. What is a hierarchical directory?",
+                solution: `Answer: A hierarchical directory has nested directories, creating a tree-like structure for better organization.`
+            },
+            {
+                question: " 8. What does mounting a file system mean?",
+                solution: `Answer: Mounting makes a file system accessible by linking it to the operating system’s directory structure.`
+            },
+
+            {
+                question: " 9. What is file sharing?",
+                solution: `Answer: File sharing allows multiple users or systems to access the same files through network protocols.`
+            },
+            {
+                question: " 10. What is contiguous allocation in file storage? ",
+                solution: `Answer: Contiguous allocation stores files in consecutive blocks, making access fast but limiting flexibility.`
+            },
+            {
+                question: " 11. What is linked allocation?",
+                solution: `Answer: Linked allocation stores files in non-contiguous blocks, with each block pointing to the next, but it's slower to access.`
+            },
+            {
+                question: " 12. What is indexed allocation?",
+                solution: `Answer: Indexed allocation uses a special index block to store addresses of file blocks, allowing faster access and avoiding fragmentation.`
+            },
+            {
+                question: " 13. What is FCFS in disk scheduling?",
+                solution: `Answer: FCFS (First Come, First Served) processes disk requests in the order they arrive, but it's not always efficient.`
+            },
+            {
+                question: " 14. What is SSTF in disk scheduling?",
+                solution: `Answer:  SSTF (Shortest Seek Time First) processes the disk request closest to the current head position, reducing travel time.`
+            },
+            {
+                question: " 15. What is the SCAN algorithm in disk scheduling?",
+                solution: `Answer:  SCAN moves the disk head in one direction, then reverses once it reaches the end, similar to an elevator.`
+            },
+            {
+                question: " 16. What is C-SCAN in disk scheduling? ",
+                solution: `Answer: C-SCAN (Circular SCAN) is a variation of SCAN, where the disk head moves in one direction and wraps around to the beginning.`
+            },
+            {
+                question: " 17. What is the LOOK algorithm in disk scheduling?",
+                solution: `Answer: LOOK moves the disk head in one direction until a request is found, then reverses direction.
+`
+            },
         ]
     },
     {
-        chapterIndex: 4, // Chapter 5: Arrays and Strings
+        chapterIndex: 4, 
         questions: [
             {
-                question: "Write a program to store 5 integers in an array and print them using a loop.",
-                solution: `#include <stdio.h>\n\nint main() {\n  int arr[5] = {1, 2, 3, 4, 5};\n  for(int i = 0; i < 5; i++) {\n    printf("%d ", arr[i]);\n  }\n  return 0;\n}`
+                question: " 1. What are I/O devices? ",
+                solution: `Answer: I/O devices are hardware that allow a computer to communicate with the outside world, such as a keyboard (input) or a monitor (output).`
             },
             {
-                question: "Create a program that takes a string from the user and prints it in reverse.",
-                solution: `#include <stdio.h>\n#include <string.h>\n\nint main() {\n  char str[100];\n  printf("Enter a string: ");\n  scanf("%s", str);\n  for(int i = strlen(str) - 1; i >= 0; i--) {\n    printf("%c", str[i]);\n  }\n  return 0;\n}`
-            }
+                question: " 2. What is an I/O controller?",
+                solution: `Answer: An I/O controller is a part of the computer that helps manage the data transfer between the CPU and I/O devices.`
+            },
+            {
+                question: " 3. What is a device driver?",
+                solution: `Answer: A device driver is a special program that helps the computer talk to a specific hardware device, like a printer or keyboard`
+            },
+            {
+                question: " 4. Why are device drivers important?",
+                solution: `Answer: Device drivers allow the operating system and applications to use hardware devices without needing to know the details of how the device works.`
+            },
+            {
+                question: " 5. What does interrupt handling mean in a computer?",
+                solution: `Answer: Interrupt handling is when the computer stops its normal tasks to deal with something urgent, like pressing a key on the keyboard.`
+            },
+            {
+                question: " 6. What is an interrupt service routine (ISR)?",
+                solution: `Answer: An ISR is a special program that runs when the CPU is interrupted by an event, like a hardware signal, to handle it before going back to normal tasks.`
+            },
+            {
+                question: " 7. What is DMA (Direct Memory Access)?",
+                solution: `Answer: DMA is a method that lets devices like hard drives or sound cards transfer data directly to memory without needing the CPU to do it.`
+            },
+            {
+                question: " 8. How does DMA improve performance?",
+                solution: `Answer: DMA frees up the CPU by allowing devices to transfer data directly to memory, which speeds up the process and reduces CPU workload.`
+            },
+            {
+                question: " 9. Why do we need interrupt handling in computers?",
+                solution: `Answer: Interrupt handling helps the computer respond quickly to important events, like user input, without wasting time on tasks that aren't urgent.`
+            },
+            {
+                question: " 10. Can the CPU be involved in every data transfer between devices and memory?",
+                solution: ` 
+Answer: No, with DMA, devices can transfer data to memory directly without involving the CPU, which saves processing power for other tasks.`
+            },
+        ]
+    },
+    {
+        chapterIndex: 5, 
+        questions: [
+            {
+                question: " 1. What is access control?",
+                solution: `Answer: Access control is a way to decide who can use or view certain resources, like files or devices.`
+            },
+            {
+                question: " 2. What are permissions?",
+                solution: `Answer: Permissions are rules that allow a user to either view, edit, or delete a file or resource.`
+            },
+            {
+                question: " 3. What does authentication mean?",
+                solution: `Answer: Authentication is the process of verifying your identity before allowing access to a system.`
+            },
+            {
+                question: " 4. What is the purpose of a password in authentication?",
+                solution: `Answer: A password is a secret code you enter to prove your identity.`
+            },
+            {
+                question: " 5. What is biometrics used for in authentication?",
+                solution: `Answer: Biometrics uses your physical traits, like fingerprints or face scans, to verify your identity.`
+            },
+            {
+                question: " 6. What is two-factor authentication (2FA)?",
+                solution: `Answer: 2FA requires two forms of identification: something you know (like a password) and something you have (like a phone).`
+            },
+            {
+                question: " 7. What is malware?",
+                solution: `Answer: Malware is harmful software that can damage or steal information from your computer.`
+            },
+            {
+                question: " 8. What is phishing?",
+                solution: `Answer: Phishing is when a fake message or website tries to trick you into giving personal information.`
+            },
+            {
+                question: " 9. What is a firewall?",
+                solution: `Answer: A firewall blocks harmful traffic and unauthorized access to your computer or network.`
+            },
+            {
+                question: " 10. What does an Intrusion Detection System (IDS) do?",
+                solution: `Answer: An IDS watches for unusual or harmful activity on a network and sends an alert when it finds something suspicious.`
+            },
+            {
+                question: " 11. Why is access control important?",
+                solution: `Answer: Access control keeps sensitive information safe by making sure only authorized users can access it.`
+            },
+            {
+                question: " 12. What harm can malware do to your system?",
+                solution: `Answer: Malware can steal data, damage files, or make your system run slowly or crash.
+These questions andAnswers cover key concepts like access control, authentication, threats, and security mechanisms in a clear and simple way.
+`
+            },
         ]
     }
 
@@ -398,52 +719,140 @@ const notes = [
     {
         chapterIndex: 0,
         notes: [
-            "C is a general-purpose programming language.",
-            "It was created by Dennis Ritchie at Bell Labs.",
-            "C is used for system and application software."
+            " An OS manages hardware, software, and resources. .",
+            "Acts as an intermediary between users and hardware.",
+            "OS: Software that controls hardware and resources.",
+            " Examples: Windows, Linux, macOS, Android.",
+            "Batch OS: Processes jobs in batches, no user interaction. Example: Early mainframes.",
+             "TimeSharing OS: Allows multiple users to share resources. Example: UNIX, Linux..",
+             " Distributed OS: Manages multiple computers as one system. Example: Android, Hadoop.",
+             " RealTime OS: Handles time-sensitive tasks. Example: RTOS, VxWorks.",
+             " OS Services: Manage memory, files, processes, and I/O.",
+             "System Calls: User requests for OS services (e.g., open(), read(), write(), fork()). ",
+             "Kernel: Manages hardware and system resources. ",
+             "User Space: Where programs run with limited hardware access, interacting with the kernel. ",        
+
         ]
     },
     {
         chapterIndex: 1,
         notes: [
-            "In C, there are different types of variables such as int, float, char, etc.",
-            "Variables store data in memory, and their type determines how much space is allocated.",
-            "C allows you to use operators to manipulate variables (e.g., addition, subtraction, etc.)."
+           " Process: A program in execution with its code, data, stack, and heap. ",
+           " Thread: Smallest unit of execution within a process; shares address space but has separate execution paths. ",
+           " FCFS: Processes are scheduled in arrival order. ",
+           " SJF: Shortest execution time first.",
+           " Round Robin: Fixed time slices for each process. ",
+           " Priority Scheduling: Processes scheduled by priority. ",
+           " Context Switching: Saves the state of a running process and loads the next process.",
+           " Interprocess Communication (IPC): Mechanisms like pipes, message queues, shared memory, semaphores, and sockets for process communication.",
+           " Deadlock: Processes are stuck waiting for each other.",
+           " Prevented by ensuring one of Coffman’s conditions is not met (e.g., no circular wait). ",
+           
         ]
     },
     {
         chapterIndex: 2,
         notes: [
-            "Control flow is an essential concept in programming, determining the order in which statements are executed.",
-            "C provides different control flow statements like if-else, switch, for, while, and do-while.",
-            "Mastering control flow is crucial for building decision-based and repetitive programs."
+          " Contiguous Memory Allocation allocates a single continuous block of memory to a process.",
+          " Non-Contiguous Memory Allocation splits a process into smaller chunks that can be stored in different places in memory. ",
+          " Contiguous memory allocation can cause fragmentation, where free memory is scattered and cannot be used effectively. ",
+          " Non-Contiguous memory allocation helps avoid fragmentation and is commonly used in paging and segmentation.",
+          " Paging divides both physical memory and the process into fixed-size blocks called pages. ",
+          " Page Table is a structure that keeps track of the locations of each page in memory. ",
+          " Segmentation divides a process into logical units (such as code, data, and stack), where each segment can have a different size. ",
+          " Segmentation provides more flexibility in memory allocation and reflects the logical structure of the program. ",
+          " Virtual Memory allows programs to use more memory than physical RAM by utilizing both RAM and disk space. ",
+          " When physical memory is full, parts of a program are moved to swap space (on disk) to free up RAM. ",
+          " FIFO (First-In-First-Out) replaces the oldest page in memory when a new page needs to be loaded. ",
+          " LRU (Least Recently Used) replaces the page that has not been used for the longest time, keeping frequently used pages in memory.",
+          " The Optimal page replacement algorithm replaces the page that will not be used for the longest time in the future, though it's impractical. ",
+          " Swapping moves a whole process from RAM to disk when memory is full, and brings it back to RAM when needed. ",
+          " Excessive swapping can slow down the system because accessing the disk is slower than accessing RAM.",
+
         ]
-    }
+    },
+    {
+        chapterIndex: 3,
+        notes: [
+          " File Concept: A file is a collection of data stored on a computer, such as text, images, videos, or programs",
+          " Sequential Access: Data in a file is read or written in order from start to finish, like reading a book.",
+          " Direct Access: Allows jumping to any part of the file directly, similar to using an index in a book.",
+          " Directory Structure: Organizes files in a system for easier management, often using folders.",
+          " Single-level Directory: All files are stored in one list without any subdirectories.",
+          " Two-level Directory: Has one directory for each user and another for storing files, offering a bit more organization.",
+          " Hierarchical Directory: Uses nested directories (folders within folders) to form a tree-like structure for better organization.",
+          " Mounting: The process of linking a file system to the operating system’s directory structure to make it accessible for use.",
+          " File Sharing: Allows multiple users or systems to access and share the same files through network file systems or protocols.",
+          " Contiguous Allocation: Files are stored in consecutive memory blocks, providing fast access but causing fragmentation if files grow.",
+          " Linked Allocation: Files are stored in non-contiguous blocks, where each block points to the next. It is flexible but slower to access.",
+          " Indexed Allocation: Uses an index block to store the addresses of all file blocks, ensuring faster access and avoiding fragmentation.",
+          " FCFS (First Come, First Served): A disk scheduling algorithm that processes requests in the order they arrive, though it can be inefficient.",
+          " SSTF (Shortest Seek Time First): A disk scheduling algorithm that processes the closest request to the current head position, reducing travel time.",
+          " SCAN Algorithm: The disk head moves in one direction until it reaches the end and then reverses direction, like an elevator moving up and down.",
+       
+
+
+        ]
+    },{
+        chapterIndex: 4,
+        notes: [
+          " I/O Devices: Hardware for input (e.g., keyboard) and output (e.g., monitor).",
+          " I/O Controllers: Manage data transfer between CPU and I/O devices.",
+          " Device Driver: Software that helps the OS control hardware devices",
+          " Interrupt: A signal that stops the CPU to handle urgent tasks.",
+          " ISR (Interrupt Service Routine): A program that handles the interrupt.",
+          " DMA (Direct Memory Access): Allows devices to transfer data directly to memory, without the CPU.",
+          " Benefit: Frees up CPU for other tasks, improving performance.",
+         
+
+        ]
+    },
+    {
+        chapterIndex: 5,
+        notes: [
+          " Access Control and Permissions: Controls who can access resources, and defines what actions they can perform (e.g., view, edit, or delete).",
+          " Authentication Methods: Verifies identity using passwords, fingerprints, or codes sent to your phone (2FA).",
+          " Threats: Risks include harmful software (malware), viruses, fake messages (phishing), and denial-of-service (DoS) attacks.",
+          " Security Mechanisms: Firewalls block harmful traffic, IDS detects suspicious activity, and encryption protects sensitive data.",
+          " Data Backup: Regularly backing up data ensures recovery in case of attacks or failures.",
+          " Security Patches: Updating software regularly helps fix vulnerabilities that could be exploited by attackers.",
+        
+
+        ]
+    },
+    // {
+    //     chapterIndex: 6,
+    //     notes: [
+    //       " ",
+    //       " ",
+    //       " ",
+    //       " ",
+    //       " ",
+    //       " ",
+    //       " ",
+    //       " ",
+
+    //     ]
+    // },
 ];
 
 const articles = [
     {
         chapterIndex: 0,
         articles: [
-            "The History of C Programming",
-            "Understanding Memory Management in C",
-            "Best Practices for Writing Clean C Code"
+          
         ]
     },
     {
         chapterIndex: 1,
         articles: [
-            "Understanding Data Types in C",
-            "How Variables Work in C",
-            "Introduction to C Operators"
+           
         ]
     },
     {
         chapterIndex: 2,
         articles: [
-            "Mastering Control Flow in C",
-            "How to Use Loops in C Efficiently",
-            "Advanced If-Else and Switch Statements"
+
         ]
     }
 ];
