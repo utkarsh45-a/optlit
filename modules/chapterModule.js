@@ -48,7 +48,7 @@ export function loadChapterContent(
 	const chapter = chapters[index];
 	chapterTitle.innerHTML = chapter.title;
 	chapterContent.innerHTML = chapter.content;
-	chapterCode.textContent = chapter.code.trim();
+	chapterCode.textContent = chapter.code?.trim();
 
 	// Add active class in sidebar chapter name
 	chapterLinks.forEach(link => link.classList.remove('active'));
