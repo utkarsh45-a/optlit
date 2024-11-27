@@ -1,14 +1,14 @@
 import {
-  handleTabSwitching,
-  renderChapters,
-  setChapterLinkListeners,
+    handleTabSwitching,
+    renderChapters,
+    setChapterLinkListeners,
 } from "../../../modules/chapterModule";
 
 // Define arrays for each chapter's content type
 const chapters = [
-  {
-    title: "Chapter 1: Introduction to Javascript",
-    content: `<h1>JavaScript: A Beginner's Guide to Programming Magic</h1>
+    {
+        title: "Chapter 1: Introduction to Javascript",
+        content: `<strong>JavaScript: A Beginner's Guide to Programming Magic</strong>
 <p>JavaScript is a versatile programming language commonly used in web development to enhance the user experiences on
     the internet. It is primarily utilised for implementing functionalities within our web applications. JavaScript is
     often hailed as a the "language of the web", is the most important part of modern web development.</p>
@@ -94,7 +94,7 @@ const chapters = [
 </p>
 <p>4 : Chakra - Developed by Microsoft, Chakra was the JavaScript engine used in the Edge web browser. It has now been
     replaced by the Chromium-based Edge browser, which uses V8 as its JavaScript engine.</p>`,
-    code: `<!DOCTYPE html>
+        code: `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -113,10 +113,10 @@ const chapters = [
 </body>
 </html>
 `,
-  },
-  {
-    title: "Chapter 2: Basics of JavaScript ",
-    content: `<h1>Let, Var & Const</h1>
+    },
+    {
+        title: "Chapter 2: Basics of JavaScript ",
+        content: `<h1>Let, Var & Const</h1>
     <p>Variable declaration is one of the easiest tasks in every programming language. However, when it comes to
         JavaScript, it can become a bit tricky due to the special features of the language. But don't worry, we've got
         you
@@ -1200,7 +1200,7 @@ console.log("Cannot Drive");
     </p>
     <h4>Syntax for if-else-if statements</h4>
 `,
-    code: `if (condition1) {
+        code: `if (condition1) {
     // Code block to be executed if condition1 is true
     } else if (condition2) {
     // Code block to be executed if condition2 is true
@@ -1223,10 +1223,10 @@ console.log("Cannot Drive");
     }
     
     // Output : "You are Fit"`,
-  },
-  {
-    title: `Chapter 3: Datatypes in JavaScript`,
-    content: `<h1>Primitive datatypes in JavaScript</h1>
+    },
+    {
+        title: `Chapter 3: Datatypes in JavaScript`,
+        content: `<h1>Primitive datatypes in JavaScript</h1>
 <p>
     In the previous articles, we have discussed the distinction between primitive and reference data types and their
     significance in JavaScript. We have also examined the classification of various data types, which fall under
@@ -2569,14 +2569,14 @@ console.log("Cannot Drive");
 <p>
     JavaScript comes with several built-in functions, such as setTimeout, setInterval, and addEventListener, which take
     functions as arguments.</p>`,
-    code: ` setTimeout(() => {
+        code: ` setTimeout(() => {
             console.log("Delayed function");
         }, 1000);`,
-  },
+    },
 
-  {
-    title: "Chapter 4: Loops in JavaScript ",
-    content: `<h1>Loops in JavaScript</h1>
+    {
+        title: "Chapter 4: Loops in JavaScript ",
+        content: `<h1>Loops in JavaScript</h1>
 <p>
     Have you ever marveled at the ability to effortlessly print large sets of natural numbers in just two or three lines
     of code? In our daily lives, humans engage in countless repetitive tasks, but have you ever stopped to ponder how
@@ -2994,7 +2994,7 @@ console.log("Cannot Drive");
 
 <p>It's fun to play with map() method you just need to know how to implement the call back function inside the map()
     method. Everything is simple and straightforward.</p>`,
-    code: ` const students = [
+        code: ` const students = [
         { name: 'Mayank', age: 21 },
         { name: 'Love', age: 24 },
         { name: 'Pranay', age: 18 }
@@ -3008,10 +3008,10 @@ console.log("Cannot Drive");
       
       // Output : [ 'Mayank', 'Love', 'Pranay' ]
    `,
-  },
-  {
-    title: "Chapter 5: JavaScript Feactures",
-    content: `<h1>Dynamic Typing In JavaScript</h1>
+    },
+    {
+        title: "Chapter 5: JavaScript Feactures",
+        content: `<h1>Dynamic Typing In JavaScript</h1>
 <p>
     Have you ever wondered why don't we use data types like 'int', 'char', 'string' in JavaScript, to define different
     types of variables as we do in other languages. Let's keep it short and dive straight into the world of JavaScript
@@ -3219,7 +3219,7 @@ console.log("Cannot Drive");
 <p>But in the next lines we make both of our objects point to null. Now in JavaScript the JavaScript engine
     automatically knows that the objects {name : 'Mayank'} ,{name : 'Love'} are not in use and thus it automatically
     de-allocates / removes them from the memory.</p>`,
-    code: `<pre>
+        code: `<pre>
     <code>
         let obj1 = { name: 'Mayank' };  // Object 1 created
         let obj2 = { name: 'Love' };  // Object 2 created
@@ -3238,10 +3238,10 @@ console.log("Cannot Drive");
         // and will automatically deallocate the memory occupied by these objects.
     </code>
 </pre>`,
-  },
-  {
-    title: "Chapter 6: JavaScript HTMLDOM ",
-    content: `<h1>DOM, BOM and Window Object in JavaScript</h1>
+    },
+    {
+        title: "Chapter 6: JavaScript HTMLDOM ",
+        content: `<h1>DOM, BOM and Window Object in JavaScript</h1>
 <p>
     In the world of web development, understanding the Document Object Model (DOM), Browser Object Model (BOM), and the
     Window object is essential for building dynamic and interactive web applications. In this article, we'll delve into
@@ -3998,7 +3998,7 @@ console.log("Cannot Drive");
 <p>'afterend', which instructs the browser to insert the new element just after the end of the existing element.
     This will result in the new element being inserted as a sibling element immediately after the existing element.
 </p>`,
-    code: `
+        code: `
 <pre>
     <code>
         &lt;!DOCTYPE html&gt;
@@ -4030,10 +4030,10 @@ console.log("Cannot Drive");
         &lt;/html&gt;
     </code>
     </pre>`,
-  },
-  {
-    title: "Chapter 7: Event Handeling in JavaScript ",
-    content: `<h1>Importance of JavaScript Events</h1>
+    },
+    {
+        title: "Chapter 7: Event Handeling in JavaScript ",
+        content: `<h1>Importance of JavaScript Events</h1>
 <p>
     Have you ever wondered about the difference between the frontend and the backend?. Have you ever wondered what do we
     mean when we say 'we use JavaScript to implement the functionalities in our webpage'?. Have you ever felt what
@@ -4314,7 +4314,7 @@ console.log("Cannot Drive");
 </h4>
 <p>In the above example, when the link is clicked, the event object is passed to the event handler function. We call the
     preventDefault() method on the event object to prevent the default behavior of following the event.</p>`,
-    code: `
+        code: `
 <pre>
     <code>
         &lt;!DOCTYPE html&gt;
@@ -4339,10 +4339,10 @@ console.log("Cannot Drive");
         &lt;/html&gt;
     </code>
 </pre>`,
-  },
-  {
-    title: "Chapter 8: Asynchronous JavaScript ",
-    content: `<h1>JavaScript 'performance.now()' method</h1>
+    },
+    {
+        title: "Chapter 8: Asynchronous JavaScript ",
+        content: `<h1>JavaScript 'performance.now()' method</h1>
 <p>
     In the world of web development, optimizing performance is crucial for delivering a seamless user experience.
     JavaScript provides several tools and techniques to measure and improve the performance of your code. One such tool
@@ -4689,7 +4689,7 @@ console.log("Cannot Drive");
 <p>In the below example, handleClick() is a callback function registered to the click event of a button element. Whenever the button is clicked, the callback function is executed, logging "Button clicked" to the console.
 </p>
 `,
-    code: `<pre>
+        code: `<pre>
     <code>
         const button = document.getElementById('myButton');
 
@@ -4700,10 +4700,10 @@ console.log("Cannot Drive");
         button.addEventListener('click', handleClick);
     </code>
 </pre>`,
-  },
-  {
-    title: "Chapter 9: AJAX and Fectch API ",
-    content: `<h1>What is AJAX and its importance?</h1>
+    },
+    {
+        title: "Chapter 9: AJAX and Fectch API ",
+        content: `<h1>What is AJAX and its importance?</h1>
 <p>
     In the early days of the web, every user interaction meant a full page reload. Imagine clicking a button and waiting
     for the entire page to refresh just to see a single piece of information updated. Thankfully, those days are gone!.
@@ -5075,7 +5075,7 @@ console.log("Cannot Drive");
 </ul>
 <p>Using .catch() allows for cleaner and more concise error handling, especially with promise chains.</p>
 `,
-    code: `<pre>
+        code: `<pre>
     <code>
         somePromise.then((result) => {
             // Code executed if the promise resolves successfully
@@ -5085,10 +5085,10 @@ console.log("Cannot Drive");
         });
     </code>
 </pre>`,
-  },
-  {
-    title: "Chapter 10: Advanced JavaScript",
-    content: `<h1>Browser Storage in JavaScript</h1>
+    },
+    {
+        title: "Chapter 10: Advanced JavaScript",
+        content: `<h1>Browser Storage in JavaScript</h1>
 <p>
     In web development, browser storage mechanisms play a crucial role in storing and retrieving data locally on the
     client-side. JavaScript provides us with several browser storage options, each with its own strengths and use cases.
@@ -5200,7 +5200,7 @@ console.log("Cannot Drive");
 <p>When using the Geolocation API, the user's browser will typically prompt them to grant permission for the website to
     access their location. Users can choose to allow or deny this request. Additionally, users can revoke this
     permission at any time through their browser settings.</p>`,
-    code: `<pre>
+        code: `<pre>
     <code>
         if ("geolocation" in navigator) {
             // Geolocation is supported
@@ -5221,241 +5221,241 @@ console.log("Cannot Drive");
         }
     </code>
 </pre>`,
-  },
+    },
 ];
 
 const practiceQuestions = [
-  {
-    chapterIndex: 1, //Introduction to Javascript
-    questions: [
-      {
-        question: "Question 1: Who developed JavaScript and in how many days?",
-        solution: `JavaScript was developed by Brendan Eich at Netscape Communications in just 10 days.`,
-      },
-      {
-        question:
-          "What were the initial names of JavaScript before it became known as JavaScript?",
-        solution: `JavaScript was initially named 'Mocha' and later 'LiveScript' before it was called 'JavaScript'.`,
-      },
-      {
-        question:
-          "What distinguishes a scripting language from a programming language?",
-        solution: `Scripting languages are interpreted and executed line-by-line at runtime, allowing for quicker development and
+    {
+        chapterIndex: 1, //Introduction to Javascript
+        questions: [
+            {
+                question: "Question 1: Who developed JavaScript and in how many days?",
+                solution: `JavaScript was developed by Brendan Eich at Netscape Communications in just 10 days.`,
+            },
+            {
+                question:
+                    "What were the initial names of JavaScript before it became known as JavaScript?",
+                solution: `JavaScript was initially named 'Mocha' and later 'LiveScript' before it was called 'JavaScript'.`,
+            },
+            {
+                question:
+                    "What distinguishes a scripting language from a programming language?",
+                solution: `Scripting languages are interpreted and executed line-by-line at runtime, allowing for quicker development and
 easier debugging. Programming languages are compiled into machine code before execution.
 `,
-      },
-      {
-        question:
-          "What frameworks and libraries have revolutionized frontend development with JavaScript?",
-        solution: `Frameworks and libraries such as AngularJS, ReactJS, and Vue.jshave revolutionized frontend development.`,
-      },
-      {
-        question:
-          "What is Node.jsand how has it expanded the use of JavaScript?",
-        solution: `Node.jsis a powerful JavaScript runtime environment that allows developers to run JavaScript code server-side,
+            },
+            {
+                question:
+                    "What frameworks and libraries have revolutionized frontend development with JavaScript?",
+                solution: `Frameworks and libraries such as AngularJS, ReactJS, and Vue.jshave revolutionized frontend development.`,
+            },
+            {
+                question:
+                    "What is Node.jsand how has it expanded the use of JavaScript?",
+                solution: `Node.jsis a powerful JavaScript runtime environment that allows developers to run JavaScript code server-side,
 thus enabling the development of scalable, high-performance web applications, APIs, and backend services.`,
-      },
-    ],
-  },
-  {
-    chapterIndex: 2, //Basics of JavaScript
-    questions: [
-      {
-        question: 'Write a "Hello, World!" program in JavaScript.',
-        solution: `console.log("Hello, World!");`,
-      },
-      {
-        question: "How do you declare variables in JavaScript?",
-        solution: `var name = "John";
+            },
+        ],
+    },
+    {
+        chapterIndex: 2, //Basics of JavaScript
+        questions: [
+            {
+                question: 'Write a "Hello, World!" program in JavaScript.',
+                solution: `console.log("Hello, World!");`,
+            },
+            {
+                question: "How do you declare variables in JavaScript?",
+                solution: `var name = "John";
     let age = 30;
      const city = "New York";`,
-      },
-      {
-        question: "What are the basic data types in JavaScript?",
-        solution: `The basic data types are String, Number, Boolean, Object, Undefined, and Null.`,
-      },
-      {
-        question:
-          "Write a function in JavaScript that takes a name as a parameter and returns a greeting message.",
-        solution: `function greet(name) {
+            },
+            {
+                question: "What are the basic data types in JavaScript?",
+                solution: `The basic data types are String, Number, Boolean, Object, Undefined, and Null.`,
+            },
+            {
+                question:
+                    "Write a function in JavaScript that takes a name as a parameter and returns a greeting message.",
+                solution: `function greet(name) {
     return "Hello, " + name;
 }
 `,
-      },
-      {
-        question: "How do you write an if-else statement in JavaScript?",
-        solution: `let age = 20;
+            },
+            {
+                question: "How do you write an if-else statement in JavaScript?",
+                solution: `let age = 20;
 if (age > 18) {
     console.log("Adult");
 } else {
     console.log("Minor");
 }
 `,
-      },
-      {
-        question:
-          "Write a for loop in JavaScript to print numbers from 1 to 5.",
-        solution: `for (let i = 1; i <= 5; i++) {
+            },
+            {
+                question:
+                    "Write a for loop in JavaScript to print numbers from 1 to 5.",
+                solution: `for (let i = 1; i <= 5; i++) {
     console.log(i);
 }
 `,
-      },
-    ],
-  },
-  {
-    chapterIndex: 3, //Datatypes in JavaScript
-    questions: [
-      {
-        question:
-          "What is the difference between null and undefined in JavaScript?",
-        solution: `undefined means a variable has been declared but not yet assigned a value.
+            },
+        ],
+    },
+    {
+        chapterIndex: 3, //Datatypes in JavaScript
+        questions: [
+            {
+                question:
+                    "What is the difference between null and undefined in JavaScript?",
+                solution: `undefined means a variable has been declared but not yet assigned a value.
 
 null is an assignment value that represents "no value" or "no object". It is a deliberate non-value.`,
-      },
-      {
-        question: "How do let, const, and var differ when declaring variables?",
-        solution: `var is function-scoped, can be re-declared, and is prone to hoisting.
+            },
+            {
+                question: "How do let, const, and var differ when declaring variables?",
+                solution: `var is function-scoped, can be re-declared, and is prone to hoisting.
 
 let is block-scoped, cannot be re-declared within the same scope, and is also hoisted but not initialized.
 
 const is block-scoped, cannot be re-declared or re-assigned, and is hoisted but not initialized.`,
-      },
-      {
-        question:
-          "What are the key features of JavaScript's prototype-based inheritance?",
-        solution: `Objects can inherit properties directly from other objects.
+            },
+            {
+                question:
+                    "What are the key features of JavaScript's prototype-based inheritance?",
+                solution: `Objects can inherit properties directly from other objects.
 
 Each object has a prototype property that points to its prototype object.
 
 It allows for sharing properties and methods across instances without duplication.`,
-      },
-      {
-        question:
-          "Can you explain the concept of 'hoisting' in JavaScript? Solution:",
-        solution: `Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope.
+            },
+            {
+                question:
+                    "Can you explain the concept of 'hoisting' in JavaScript? Solution:",
+                solution: `Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope.
 
 Variable and function declarations are hoisted, but variable assignments are not.
 
 This means you can use functions and variables before they are declared in the code.`,
-      },
-      {
-        question:
-          "Why are functions considered first-class citizens in JavaScript?",
-        solution: `Functions can be assigned to variables.
+            },
+            {
+                question:
+                    "Why are functions considered first-class citizens in JavaScript?",
+                solution: `Functions can be assigned to variables.
 
 They can be passed as arguments to other functions.
 
 They can be returned from other functions.
 
 This makes functions highly flexible and central to JavaScript's functional programming style.`,
-      },
-    ],
-  },
-  {
-    chapterIndex: 4, //Loops in JavaScript
-    questions: [
-      {
-        question: "How do you create a for loop to print numbers from 1 to 10?",
-        solution: `for (let i = 1; i <= 10; i++) {
+            },
+        ],
+    },
+    {
+        chapterIndex: 4, //Loops in JavaScript
+        questions: [
+            {
+                question: "How do you create a for loop to print numbers from 1 to 10?",
+                solution: `for (let i = 1; i <= 10; i++) {
     console.log(i);
 }
 `,
-      },
-      {
-        question: "How can you use a while loop to print numbers from 1 to 10?",
-        solution: `let i = 1;
+            },
+            {
+                question: "How can you use a while loop to print numbers from 1 to 10?",
+                solution: `let i = 1;
 while (i <= 10) {
     console.log(i);
     i++;
 }
 `,
-      },
-      {
-        question: "Write a do...while loop that prints numbers from 1 to 10.",
-        solution: `let i = 1;
+            },
+            {
+                question: "Write a do...while loop that prints numbers from 1 to 10.",
+                solution: `let i = 1;
 do {
     console.log(i);
     i++;
 } while (i <= 10);
 `,
-      },
-      {
-        question:
-          "How do you use a for...in loop to iterate over the properties of an object?",
-        solution: `const obj = {a: 1, b: 2, c: 3};
+            },
+            {
+                question:
+                    "How do you use a for...in loop to iterate over the properties of an object?",
+                solution: `const obj = {a: 1, b: 2, c: 3};
 for (let key in obj) {
     console.log(\`\${key}: \${obj[key]}\`);
 }
 `,
-      },
-      {
-        question: "How can a for...of loop be used to iterate over an array?",
-        solution: `const array = [10, 20, 30, 40];
+            },
+            {
+                question: "How can a for...of loop be used to iterate over an array?",
+                solution: `const array = [10, 20, 30, 40];
 for (let value of array) {
     console.log(value);
 }
 `,
-      },
-    ],
-  },
-  {
-    chapterIndex: 5, //JavaScript Feactures
-    questions: [
-      {
-        question: "How to reverse a string in JavaScript?",
-        solution: `function reverseString(str) {
+            },
+        ],
+    },
+    {
+        chapterIndex: 5, //JavaScript Feactures
+        questions: [
+            {
+                question: "How to reverse a string in JavaScript?",
+                solution: `function reverseString(str) {
   return str.split('').reverse().join('');
 }
 
 console.log(reverseString("hello")); // Output: "olleh"
 `,
-      },
-      {
-        question: "How to check if a number is even or odd in JavaScript?",
-        solution: `function isEven(num) {
+            },
+            {
+                question: "How to check if a number is even or odd in JavaScript?",
+                solution: `function isEven(num) {
   return num % 2 === 0;
 }
 
 console.log(isEven(4)); // Output: true
 console.log(isEven(5)); // Output: false
 `,
-      },
-      {
-        question: "How to find the largest number in an array in JavaScript?",
-        solution: `function findLargest(arr) {
+            },
+            {
+                question: "How to find the largest number in an array in JavaScript?",
+                solution: `function findLargest(arr) {
   return Math.max(...arr);
 }
 
 console.log(findLargest([1, 2, 3, 4, 5])); // Output: 5
 `,
-      },
-      {
-        question: "How to remove duplicates from an array in JavaScript?",
-        solution: `function removeDuplicates(arr) {
+            },
+            {
+                question: "How to remove duplicates from an array in JavaScript?",
+                solution: `function removeDuplicates(arr) {
   return [...new Set(arr)];
 }
 
 console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Output: [1, 2, 3, 4, 5]
 `,
-      },
-      {
-        question: "How to sort an array of numbers in JavaScript?",
-        solution: `function sortArray(arr) {
+            },
+            {
+                question: "How to sort an array of numbers in JavaScript?",
+                solution: `function sortArray(arr) {
   return arr.sort((a, b) => a - b);
 }
 
 console.log(sortArray([5, 3, 8, 1, 2])); // Output: [1, 2, 3, 5, 8]
 `,
-      },
-    ],
-  },
-  {
-    chapterIndex: 6, //JavaScript HTMLDOM
-    questions: [
-      {
-        question:
-          "Accessing Elements: You can access elements in the DOM using different methods.",
-        solution: `// Example: Selecting an element by ID
+            },
+        ],
+    },
+    {
+        chapterIndex: 6, //JavaScript HTMLDOM
+        questions: [
+            {
+                question:
+                    "Accessing Elements: You can access elements in the DOM using different methods.",
+                solution: `// Example: Selecting an element by ID
 var element = document.getElementById("myElement");
 
 // Example: Selecting elements by class name
@@ -5464,30 +5464,30 @@ var elements = document.getElementsByClassName("myClass");
 // Example: Selecting elements by tag name
 var tags = document.getElementsByTagName("div");
 `,
-      },
-      {
-        question:
-          "Modifying Content: Change the content of HTML elements dynamically.",
-        solution: `// Example: Changing the inner HTML of an element
+            },
+            {
+                question:
+                    "Modifying Content: Change the content of HTML elements dynamically.",
+                solution: `// Example: Changing the inner HTML of an element
 element.innerHTML = "New content here!";
 
 // Example: Changing the text content of an element
 element.textContent = "Updated text!";
 `,
-      },
-      {
-        question: "Changing Styles: Adjust the styles of HTML elements.",
-        solution: `// Example: Changing the background color of an element
+            },
+            {
+                question: "Changing Styles: Adjust the styles of HTML elements.",
+                solution: `// Example: Changing the background color of an element
 element.style.backgroundColor = "lightblue";
 
 // Example: Setting multiple styles
 element.style.cssText = "color: red; font-size: 20px;";
 `,
-      },
-      {
-        question:
-          "Handling Events: Respond to user actions by adding event listeners to elements.",
-        solution: `// Example: Adding a click event listener to an element
+            },
+            {
+                question:
+                    "Handling Events: Respond to user actions by adding event listeners to elements.",
+                solution: `// Example: Adding a click event listener to an element
 element.addEventListener("click", function() {
     alert("Element was clicked!");
 });
@@ -5497,11 +5497,11 @@ element.addEventListener("mouseover", function() {
     element.style.color = "green";
 });
 `,
-      },
-      {
-        question:
-          "Creating and Removing Elements: Dynamically create and remove HTML elements.",
-        solution: `// Example: Creating a new element
+            },
+            {
+                question:
+                    "Creating and Removing Elements: Dynamically create and remove HTML elements.",
+                solution: `// Example: Creating a new element
 var newElement = document.createElement("div");
 newElement.textContent = "I am a new element!";
 document.body.appendChild(newElement);
@@ -5510,63 +5510,63 @@ document.body.appendChild(newElement);
 var elementToRemove = document.getElementById("removeMe");
 elementToRemove.parentNode.removeChild(elementToRemove);
 `,
-      },
-    ],
-  },
-  {
-    chapterIndex: 7, //Event Handeling in JavaScript
-    questions: [
-      {
-        question: "Button Click",
-        solution: `document.getElementById('myButton').addEventListener('click', function() {
+            },
+        ],
+    },
+    {
+        chapterIndex: 7, //Event Handeling in JavaScript
+        questions: [
+            {
+                question: "Button Click",
+                solution: `document.getElementById('myButton').addEventListener('click', function() {
     alert('Button clicked!');
 });
 `,
-      },
-      {
-        question: "Mouse Over",
-        solution: `document.getElementById('myElement').addEventListener('mouseover', function() {
+            },
+            {
+                question: "Mouse Over",
+                solution: `document.getElementById('myElement').addEventListener('mouseover', function() {
     console.log('Mouse over the element!');
 });
 `,
-      },
-      {
-        question: "Key Down",
-        solution: `document.addEventListener('keydown', function(event) {
+            },
+            {
+                question: "Key Down",
+                solution: `document.addEventListener('keydown', function(event) {
     console.log('Key pressed: ' + event.key);
 });
 `,
-      },
-      {
-        question: "Form Submission",
-        solution: `document.getElementById('myForm').addEventListener('submit', function(event) {
+            },
+            {
+                question: "Form Submission",
+                solution: `document.getElementById('myForm').addEventListener('submit', function(event) {
     event.preventDefault();
     alert('Form submitted!');
 });
 `,
-      },
-      {
-        question: "Window Load",
-        solution: `window.addEventListener('load', function() {
+            },
+            {
+                question: "Window Load",
+                solution: `window.addEventListener('load', function() {
     console.log('Page fully loaded');
 });
 `,
-      },
-      {
-        question: "Input Change",
-        solution: `document.getElementById('myInput').addEventListener('change', function() {
+            },
+            {
+                question: "Input Change",
+                solution: `document.getElementById('myInput').addEventListener('change', function() {
     console.log('Input value changed!');
 });
 `,
-      },
-    ],
-  },
-  {
-    chapterIndex: 8, //Asynchronous JavaScript
-    questions: [
-      {
-        question: "How do you use callbacks to handle asynchronous operations?",
-        solution: `function fetchData(callback) {
+            },
+        ],
+    },
+    {
+        chapterIndex: 8, //Asynchronous JavaScript
+        questions: [
+            {
+                question: "How do you use callbacks to handle asynchronous operations?",
+                solution: `function fetchData(callback) {
     setTimeout(() => {
         callback('Data fetched');
     }, 2000);
@@ -5576,10 +5576,10 @@ fetchData((data) => {
     console.log(data);
 });
 `,
-      },
-      {
-        question: "How do you use Promises to handle asynchronous operations?",
-        solution: `let fetchData = new Promise((resolve, reject) => {
+            },
+            {
+                question: "How do you use Promises to handle asynchronous operations?",
+                solution: `let fetchData = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve('Data fetched');
     }, 2000);
@@ -5589,10 +5589,10 @@ fetchData.then((data) => {
     console.log(data);
 });
 `,
-      },
-      {
-        question: "How do you use async/await for asynchronous operations?",
-        solution: `async function fetchData() {
+            },
+            {
+                question: "How do you use async/await for asynchronous operations?",
+                solution: `async function fetchData() {
     let data = await new Promise((resolve) => {
         setTimeout(() => {
             resolve('Data fetched');
@@ -5603,10 +5603,10 @@ fetchData.then((data) => {
 
 fetchData();
 `,
-      },
-      {
-        question: "How do you use the Fetch API to make network requests?",
-        solution: `async function fetchData() {
+            },
+            {
+                question: "How do you use the Fetch API to make network requests?",
+                solution: `async function fetchData() {
     let response = await fetch('https://api.example.com/data');
     let data = await response.json();
     console.log(data);
@@ -5614,10 +5614,10 @@ fetchData();
 
 fetchData();
 `,
-      },
-      {
-        question: "How do you handle errors in asynchronous code?",
-        solution: `fetch('https://api.example.com/data')
+            },
+            {
+                question: "How do you handle errors in asynchronous code?",
+                solution: `fetch('https://api.example.com/data')
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.error('Error:', error));
@@ -5634,10 +5634,10 @@ async function fetchData() {
 
 fetchData();
 `,
-      },
-      {
-        question: "What is the Event Loop and how does it work?",
-        solution: `console.log('Start');
+            },
+            {
+                question: "What is the Event Loop and how does it work?",
+                solution: `console.log('Start');
 
 setTimeout(() => {
     console.log('Timeout');
@@ -5645,15 +5645,15 @@ setTimeout(() => {
 
 console.log('End');
 `,
-      },
-    ],
-  },
-  {
-    chapterIndex: 9, //AJAX and Fectch API
-    questions: [
-      {
-        question: "Fetching Data from an API(AJAX)",
-        solution: `let xhr = new XMLHttpRequest();
+            },
+        ],
+    },
+    {
+        chapterIndex: 9, //AJAX and Fectch API
+        questions: [
+            {
+                question: "Fetching Data from an API(AJAX)",
+                solution: `let xhr = new XMLHttpRequest();
 xhr.open("GET", "https://api.example.com/data", true);
 xhr.onload = function () {
   if (xhr.status === 200) {
@@ -5662,18 +5662,18 @@ xhr.onload = function () {
 };
 xhr.send();
 `,
-      },
-      {
-        question: "Fetching Data from an API(Fetch)",
-        solution: `fetch("https://api.example.com/data")
+            },
+            {
+                question: "Fetching Data from an API(Fetch)",
+                solution: `fetch("https://api.example.com/data")
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));
 `,
-      },
-      {
-        question: "Submitting Form Data(AJAX)",
-        solution: `let xhr = new XMLHttpRequest();
+            },
+            {
+                question: "Submitting Form Data(AJAX)",
+                solution: `let xhr = new XMLHttpRequest();
 xhr.open("POST", "https://api.example.com/submit", true);
 xhr.setRequestHeader("Content-Type", "application/json");
 xhr.onload = function () {
@@ -5683,10 +5683,10 @@ xhr.onload = function () {
 };
 xhr.send(JSON.stringify({ name: "John", message: "Hello!" }));
 `,
-      },
-      {
-        question: "Submitting Form Data(Fetch)",
-        solution: `fetch("https://api.example.com/submit", {
+            },
+            {
+                question: "Submitting Form Data(Fetch)",
+                solution: `fetch("https://api.example.com/submit", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
@@ -5697,25 +5697,25 @@ xhr.send(JSON.stringify({ name: "John", message: "Hello!" }));
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));
 `,
-      },
-    ],
-  },
-  {
-    chapterIndex: 10, //Advanced JavaScript
-    questions: [
-      {
-        question: "Storing User Preferences with Local Storage:",
-        solution: `// Save user theme preference to local storage
+            },
+        ],
+    },
+    {
+        chapterIndex: 10, //Advanced JavaScript
+        questions: [
+            {
+                question: "Storing User Preferences with Local Storage:",
+                solution: `// Save user theme preference to local storage
 localStorage.setItem('theme', 'dark');
 
 // Retrieve user theme preference from local storage
 let theme = localStorage.getItem('theme');
 console.log('User theme preference:', theme);
 `,
-      },
-      {
-        question: "Session Storage for Temporary Data:",
-        solution: `// Save session data
+            },
+            {
+                question: "Session Storage for Temporary Data:",
+                solution: `// Save session data
 sessionStorage.setItem('sessionToken', 'abc123');
 
 // Retrieve session data
@@ -5725,10 +5725,10 @@ console.log('Session Token:', sessionToken);
 // Clear session storage
 sessionStorage.clear();
 `,
-      },
-      {
-        question: "IndexedDB for Storing Complex Data:",
-        solution: `let request = indexedDB.open('userDatabase', 1);
+            },
+            {
+                question: "IndexedDB for Storing Complex Data:",
+                solution: `let request = indexedDB.open('userDatabase', 1);
 
 request.onupgradeneeded = function(event) {
     let db = event.target.result;
@@ -5743,10 +5743,10 @@ request.onsuccess = function(event) {
     store.add(user);
 };
 `,
-      },
-      {
-        question: "Using Cookies for User Authentication:",
-        solution: `// Set a cookie with an expiration date
+            },
+            {
+                question: "Using Cookies for User Authentication:",
+                solution: `// Set a cookie with an expiration date
 document.cookie = "username=JohnDoe; expires=Fri, 31 Dec 2024 23:59:59 GMT; path=/";
 
 // Read the cookie
@@ -5764,10 +5764,10 @@ function getCookie(name) {
 let username = getCookie("username");
 console.log('Username from cookie:', username);
 `,
-      },
-      {
-        question: "Clearing Data from Local Storage:",
-        solution: `let request = indexedDB.open('userDatabase', 1);
+            },
+            {
+                question: "Clearing Data from Local Storage:",
+                solution: `let request = indexedDB.open('userDatabase', 1);
 
 request.onupgradeneeded = function(event) {
     let db = event.target.result;
@@ -5782,229 +5782,229 @@ request.onsuccess = function(event) {
     store.add(user);
 };
 `,
-      },
-    ],
-  },
+            },
+        ],
+    },
 ];
 
 const notes = [
-  {
-    chapterIndex: 1, //Introduction to Javascript
-    notes: [
-      " JavaScript Origin: Initially developed in 10 days by Brendan Eich at Netscape Communications, originally named 'Mocha', then 'LiveScript', and finally 'JavaScript'",
+    {
+        chapterIndex: 1, //Introduction to Javascript
+        notes: [
+            " JavaScript Origin: Initially developed in 10 days by Brendan Eich at Netscape Communications, originally named 'Mocha', then 'LiveScript', and finally 'JavaScript'",
 
-      "JavaScript Usage: Widely used in web development for implementing functionalities within web applications.",
+            "JavaScript Usage: Widely used in web development for implementing functionalities within web applications.",
 
-      "JavaScript Evolution: Initially designed for dynamic content and interactivity in web pages, it has now expanded with HTML5, CSS3, and frameworks like AngularJS, ReactJS, and Vue.js.",
+            "JavaScript Evolution: Initially designed for dynamic content and interactivity in web pages, it has now expanded with HTML5, CSS3, and frameworks like AngularJS, ReactJS, and Vue.js.",
 
-      "JavaScript and Node.js: With Node.js, JavaScript can be used for server-side applications, making it versatile for both client-side and server-side development.",
+            "JavaScript and Node.js: With Node.js, JavaScript can be used for server-side applications, making it versatile for both client-side and server-side development.",
 
-      "JavaScript Classification: JavaScript is both a scripting language and a light-weight programming language.",
+            "JavaScript Classification: JavaScript is both a scripting language and a light-weight programming language.",
 
-      "Scripting vs Programming Languages: Scripting languages are interpreted and used for quicker development cycles, while programming languages are compiled.",
+            "Scripting vs Programming Languages: Scripting languages are interpreted and used for quicker development cycles, while programming languages are compiled.",
 
-      "JavaScript’s Versatility: Used for client-side scripting in web browsers and server-side scripting with platforms like Node.js.",
+            "JavaScript’s Versatility: Used for client-side scripting in web browsers and server-side scripting with platforms like Node.js.",
 
-      "Client-Side and Server-Side: Historically client-side but now also used for server-side applications thanks to Node.js.",
+            "Client-Side and Server-Side: Historically client-side but now also used for server-side applications thanks to Node.js.",
 
-      "JavaScript Engines: Popular engines include V8 (Google), SpiderMonkey (Mozilla Firefox), JavaScriptCore (Safari), and Chakra (Microsoft Edge).",
+            "JavaScript Engines: Popular engines include V8 (Google), SpiderMonkey (Mozilla Firefox), JavaScriptCore (Safari), and Chakra (Microsoft Edge).",
 
-      "Dynamic Web Experience: JavaScript makes web pages interactive, handling forms, animations, and reacting to user actions.",
-    ],
-  },
-  {
-    chapterIndex: 2, //Basics of JavaScript
-    notes: [
-      "Variables: Used to store data values which can be reused throughout the program. JavaScript uses var, let, and const to declare variables.",
+            "Dynamic Web Experience: JavaScript makes web pages interactive, handling forms, animations, and reacting to user actions.",
+        ],
+    },
+    {
+        chapterIndex: 2, //Basics of JavaScript
+        notes: [
+            "Variables: Used to store data values which can be reused throughout the program. JavaScript uses var, let, and const to declare variables.",
 
-      "Data Types: The primary types of data in JavaScript include strings (text), numbers, booleans (true/false), objects, undefined, and null.",
+            "Data Types: The primary types of data in JavaScript include strings (text), numbers, booleans (true/false), objects, undefined, and null.",
 
-      "Operators: Symbols that perform operations on variables and values. Examples include arithmetic operators for calculations, comparison operators to compare values, and logical operators for logical operations.",
+            "Operators: Symbols that perform operations on variables and values. Examples include arithmetic operators for calculations, comparison operators to compare values, and logical operators for logical operations.",
 
-      "Functions: Blocks of code that perform a specific task and can be executed when called. Functions help in organizing code and reusing it efficiently.",
+            "Functions: Blocks of code that perform a specific task and can be executed when called. Functions help in organizing code and reusing it efficiently.",
 
-      "Events: Actions or occurrences that happen in the browser, which JavaScript can react to, like clicking a button, loading a page, or submitting a form.",
+            "Events: Actions or occurrences that happen in the browser, which JavaScript can react to, like clicking a button, loading a page, or submitting a form.",
 
-      "Control Structures: These include conditional statements like if, else if, and else to execute code based on certain conditions, and loops like for, while, and do...while for repeated execution of code blocks.",
+            "Control Structures: These include conditional statements like if, else if, and else to execute code based on certain conditions, and loops like for, while, and do...while for repeated execution of code blocks.",
 
-      "Arrays: Data structures used to store multiple values in a single variable, where each value can be accessed using an index.",
+            "Arrays: Data structures used to store multiple values in a single variable, where each value can be accessed using an index.",
 
-      "Objects: Collections of properties, each with a key and a value. Objects are used to store related data and functions together. ",
-    ],
-  },
-  {
-    chapterIndex: 3, //Datatypes in JS
-    notes: [
-      "Dynamic Typing: JavaScript variables can hold different types of data at different times. This flexibility allows developers to write more flexible code but requires careful handling to avoid runtime errors.",
+            "Objects: Collections of properties, each with a key and a value. Objects are used to store related data and functions together. ",
+        ],
+    },
+    {
+        chapterIndex: 3, //Datatypes in JS
+        notes: [
+            "Dynamic Typing: JavaScript variables can hold different types of data at different times. This flexibility allows developers to write more flexible code but requires careful handling to avoid runtime errors.",
 
-      "Functions as First-Class Citizens: In JavaScript, functions are treated as objects. This means they can be assigned to variables, passed as arguments, and returned from other functions, giving developers powerful tools for creating modular and reusable code.",
+            "Functions as First-Class Citizens: In JavaScript, functions are treated as objects. This means they can be assigned to variables, passed as arguments, and returned from other functions, giving developers powerful tools for creating modular and reusable code.",
 
-      "Prototype-Based Inheritance: JavaScript uses a unique inheritance model where objects can directly inherit properties and methods from other objects. This contrasts with classical inheritance used in many other programming languages.",
+            "Prototype-Based Inheritance: JavaScript uses a unique inheritance model where objects can directly inherit properties and methods from other objects. This contrasts with classical inheritance used in many other programming languages.",
 
-      "=Asynchronous Programming: JavaScript provides robust support for asynchronous operations, enabling developers to write non-blocking code. This is essential for tasks like network requests or reading files, where operations can take time and would otherwise halt the execution of code.",
+            "=Asynchronous Programming: JavaScript provides robust support for asynchronous operations, enabling developers to write non-blocking code. This is essential for tasks like network requests or reading files, where operations can take time and would otherwise halt the execution of code.",
 
-      "Event-Driven Nature: JavaScript is built to handle events efficiently, especially in the context of web development. It allows developers to create interactive applications that respond to user actions such as clicks, typing, and mouse movements.",
-    ],
-  },
-  {
-    chapterIndex: 4, //loops in JS
-    notes: [
-      "Types of Loops: JavaScript has several loop types, including for, while, do...while, and the ES6 additions for...of and for...in.",
-      "For Loop: Ideal for iterating a known number of times, typically used with arrays.",
+            "Event-Driven Nature: JavaScript is built to handle events efficiently, especially in the context of web development. It allows developers to create interactive applications that respond to user actions such as clicks, typing, and mouse movements.",
+        ],
+    },
+    {
+        chapterIndex: 4, //loops in JS
+        notes: [
+            "Types of Loops: JavaScript has several loop types, including for, while, do...while, and the ES6 additions for...of and for...in.",
+            "For Loop: Ideal for iterating a known number of times, typically used with arrays.",
 
-      "While Loop: Continues running as long as the specified condition is true. Useful when the number of iterations isn't predetermined.",
+            "While Loop: Continues running as long as the specified condition is true. Useful when the number of iterations isn't predetermined.",
 
-      "Do...While Loop: Similar to while loops, but guarantees at least one iteration since the condition is evaluated after the loop body.",
+            "Do...While Loop: Similar to while loops, but guarantees at least one iteration since the condition is evaluated after the loop body.",
 
-      "For...In Loop: Used to iterate over the properties of an object (enumerable properties).",
+            "For...In Loop: Used to iterate over the properties of an object (enumerable properties).",
 
-      "For...Of Loop: Introduced in ES6, it iterates over iterable objects like arrays, strings, and more.",
+            "For...Of Loop: Introduced in ES6, it iterates over iterable objects like arrays, strings, and more.",
 
-      "Break Statement: Used to exit a loop before it has iterated through all its items.",
+            "Break Statement: Used to exit a loop before it has iterated through all its items.",
 
-      "Continue Statement: Skips the current iteration and proceeds to the next iteration of the loop.",
+            "Continue Statement: Skips the current iteration and proceeds to the next iteration of the loop.",
 
-      "Nested Loops: Loops within loops, useful for working with multi-dimensional arrays or complex data structures.",
+            "Nested Loops: Loops within loops, useful for working with multi-dimensional arrays or complex data structures.",
 
-      "Performance Considerations: Choosing the right loop can impact performance, especially in large-scale applications or complex operations. The most efficient loop depends on the specific use case.",
-    ],
-  },
-  {
-    chapterIndex: 5, //JavaScript Feactures
-    notes: [
-      "Asynchronous Programming: JavaScript supports asynchronous programming through callbacks, promises, and async/await, allowing for non-blocking operations that improve performance and user experience.",
+            "Performance Considerations: Choosing the right loop can impact performance, especially in large-scale applications or complex operations. The most efficient loop depends on the specific use case.",
+        ],
+    },
+    {
+        chapterIndex: 5, //JavaScript Feactures
+        notes: [
+            "Asynchronous Programming: JavaScript supports asynchronous programming through callbacks, promises, and async/await, allowing for non-blocking operations that improve performance and user experience.",
 
-      "First-Class Functions: Functions in JavaScript are treated as first-class citizens, meaning they can be assigned to variables, passed as arguments to other functions, and returned from functions.",
+            "First-Class Functions: Functions in JavaScript are treated as first-class citizens, meaning they can be assigned to variables, passed as arguments to other functions, and returned from functions.",
 
-      "Closures: Closures are functions that remember the scope in which they were created. This allows for data encapsulation and the creation of private variables.",
+            "Closures: Closures are functions that remember the scope in which they were created. This allows for data encapsulation and the creation of private variables.",
 
-      "Prototype-Based Inheritance: Unlike class-based languages, JavaScript uses prototypes for inheritance, enabling objects to inherit properties and methods from other objects.",
+            "Prototype-Based Inheritance: Unlike class-based languages, JavaScript uses prototypes for inheritance, enabling objects to inherit properties and methods from other objects.",
 
-      "Event-Driven Programming: JavaScript is heavily used for event-driven programming, especially in web development, where actions like clicks, keyboard inputs, and timeouts can trigger specific functions.",
+            "Event-Driven Programming: JavaScript is heavily used for event-driven programming, especially in web development, where actions like clicks, keyboard inputs, and timeouts can trigger specific functions.",
 
-      "Dynamic Typing: JavaScript is dynamically typed, meaning variable types are determined at runtime, which provides flexibility in coding but requires careful handling to avoid type-related errors.",
-    ],
-  },
-  {
-    chapterIndex: 6, //JavaScript HTMLDOM
-    notes: [
-      "Accessing Elements: You can select and manipulate elements within the HTML document using various methods to interact with the DOM structure.",
+            "Dynamic Typing: JavaScript is dynamically typed, meaning variable types are determined at runtime, which provides flexibility in coding but requires careful handling to avoid type-related errors.",
+        ],
+    },
+    {
+        chapterIndex: 6, //JavaScript HTMLDOM
+        notes: [
+            "Accessing Elements: You can select and manipulate elements within the HTML document using various methods to interact with the DOM structure.",
 
-      "Modifying Content: JavaScript allows you to dynamically change the content of any HTML element, making your web pages interactive and responsive to user input.",
+            "Modifying Content: JavaScript allows you to dynamically change the content of any HTML element, making your web pages interactive and responsive to user input.",
 
-      "Changing Styles: You can alter the visual styling of elements, such as colors, fonts, and layouts, directly through JavaScript, offering dynamic visual updates.",
+            "Changing Styles: You can alter the visual styling of elements, such as colors, fonts, and layouts, directly through JavaScript, offering dynamic visual updates.",
 
-      "Managing Classes: Classes can be added, removed, or toggled on elements, providing a way to apply CSS styles conditionally based on user actions or other criteria.",
+            "Managing Classes: Classes can be added, removed, or toggled on elements, providing a way to apply CSS styles conditionally based on user actions or other criteria.",
 
-      "Handling Events: JavaScript can listen for and respond to user actions (like clicks, key presses, and form submissions) to create a more engaging user experience.",
+            "Handling Events: JavaScript can listen for and respond to user actions (like clicks, key presses, and form submissions) to create a more engaging user experience.",
 
-      "Creating and Removing Elements: You can generate new HTML elements or remove existing ones, which helps in building dynamic content and interfaces.",
-    ],
-  },
-  {
-    chapterIndex: 7, //Event Handeling in JavaScript
-    notes: [
-      "Events Definition: Events are actions or occurrences that happen in the browser window, such as clicks, key presses, or page loads.",
+            "Creating and Removing Elements: You can generate new HTML elements or remove existing ones, which helps in building dynamic content and interfaces.",
+        ],
+    },
+    {
+        chapterIndex: 7, //Event Handeling in JavaScript
+        notes: [
+            "Events Definition: Events are actions or occurrences that happen in the browser window, such as clicks, key presses, or page loads.",
 
-      "Event Listeners: These are methods that wait for a specific event to occur on a particular element and then execute a function in response.",
+            "Event Listeners: These are methods that wait for a specific event to occur on a particular element and then execute a function in response.",
 
-      "Types of Events: Common events include click, mouseover, mouseout, keydown, and load.",
+            "Types of Events: Common events include click, mouseover, mouseout, keydown, and load.",
 
-      "Event Handling Steps: The basic process involves selecting an HTML element, attaching an event listener to it, and defining a function to handle the event.",
+            "Event Handling Steps: The basic process involves selecting an HTML element, attaching an event listener to it, and defining a function to handle the event.",
 
-      "Inline vs. External Handling: Events can be handled directly within HTML tags using attributes like onclick, but using external or internal script files is a best practice for better code organization.",
+            "Inline vs. External Handling: Events can be handled directly within HTML tags using attributes like onclick, but using external or internal script files is a best practice for better code organization.",
 
-      "Event Propagation: Events have a life cycle involving bubbling and capturing phases, determining the order in which event handlers are executed.",
+            "Event Propagation: Events have a life cycle involving bubbling and capturing phases, determining the order in which event handlers are executed.",
 
-      "Advanced Techniques: Includes creating custom events, removing event listeners, and understanding event propagation for more complex interactions.",
-    ],
-  },
-  {
-    chapterIndex: 8, //Asynchronous JavaScript
-    notes: [
-      "Callbacks: Functions passed as arguments to be executed once an asynchronous operation is complete.",
+            "Advanced Techniques: Includes creating custom events, removing event listeners, and understanding event propagation for more complex interactions.",
+        ],
+    },
+    {
+        chapterIndex: 8, //Asynchronous JavaScript
+        notes: [
+            "Callbacks: Functions passed as arguments to be executed once an asynchronous operation is complete.",
 
-      "Promises: Objects representing eventual completion or failure of an asynchronous operation, allowing chaining with .then() and .catch().",
+            "Promises: Objects representing eventual completion or failure of an asynchronous operation, allowing chaining with .then() and .catch().",
 
-      "Async/Await: Syntactic sugar on top of promises, enabling writing asynchronous code as if it were synchronous.",
+            "Async/Await: Syntactic sugar on top of promises, enabling writing asynchronous code as if it were synchronous.",
 
-      "Fetch API: Built-in browser API for making network requests, replacing older methods like XMLHttpRequest.",
+            "Fetch API: Built-in browser API for making network requests, replacing older methods like XMLHttpRequest.",
 
-      "Event Loop: Mechanism that handles asynchronous operations, allowing JavaScript to run non-blocking code.",
+            "Event Loop: Mechanism that handles asynchronous operations, allowing JavaScript to run non-blocking code.",
 
-      "Error Handling: Asynchronous code requires careful error handling using .catch() for promises or try...catch for async/await.",
+            "Error Handling: Asynchronous code requires careful error handling using .catch() for promises or try...catch for async/await.",
 
-      "Concurrency: Asynchronous JavaScript allows multiple operations to be in progress at the same time, enhancing performance and responsiveness.",
-    ],
-  },
-  {
-    chapterIndex: 9, //AJAX and Fectch API
-    notes: [
-      "Asynchronous Updates: Allows parts of a web page to be updated without reloading the whole page.",
+            "Concurrency: Asynchronous JavaScript allows multiple operations to be in progress at the same time, enhancing performance and responsiveness.",
+        ],
+    },
+    {
+        chapterIndex: 9, //AJAX and Fectch API
+        notes: [
+            "Asynchronous Updates: Allows parts of a web page to be updated without reloading the whole page.",
 
-      "XMLHttpRequest: Uses the traditional XMLHttpRequest object for making HTTP requests.",
+            "XMLHttpRequest: Uses the traditional XMLHttpRequest object for making HTTP requests.",
 
-      "Versatile Data Formats: Can handle JSON, XML, HTML, and plain text.",
+            "Versatile Data Formats: Can handle JSON, XML, HTML, and plain text.",
 
-      'Callback Functions: Relies heavily on callback functions for handling responses, which can lead to "callback hell." ',
+            'Callback Functions: Relies heavily on callback functions for handling responses, which can lead to "callback hell." ',
 
-      "Modern Approach: Provides a more modern and clean approach to making web requests.",
+            "Modern Approach: Provides a more modern and clean approach to making web requests.",
 
-      "Promise-Based: Uses Promises to handle asynchronous operations, making the code easier to read and manage.",
+            "Promise-Based: Uses Promises to handle asynchronous operations, making the code easier to read and manage.",
 
-      "Simpler Syntax: Offers a more straightforward and concise syntax compared to XMLHttpRequest.",
+            "Simpler Syntax: Offers a more straightforward and concise syntax compared to XMLHttpRequest.",
 
-      "Flexible Response Handling: Can easily handle various response types such as JSON, blobs, and text.",
-    ],
-  },
-  {
-    chapterIndex: 10, //Advanced JavaScript
-    notes: [
-      "Local Storage: Stores data with no expiration date. Ideal for persisting small amounts of data over time, such as user settings.",
+            "Flexible Response Handling: Can easily handle various response types such as JSON, blobs, and text.",
+        ],
+    },
+    {
+        chapterIndex: 10, //Advanced JavaScript
+        notes: [
+            "Local Storage: Stores data with no expiration date. Ideal for persisting small amounts of data over time, such as user settings.",
 
-      "Session Storage: Similar to local storage but clears data when the page session ends. Suitable for temporary data specific to a single browsing session.",
+            "Session Storage: Similar to local storage but clears data when the page session ends. Suitable for temporary data specific to a single browsing session.",
 
-      "Cookies: Small data files stored on the client side. They can be set to expire and are sent to the server with every HTTP request. Used for things like tracking and user authentication.",
+            "Cookies: Small data files stored on the client side. They can be set to expire and are sent to the server with every HTTP request. Used for things like tracking and user authentication.",
 
-      "IndexedDB: A low-level API for storing large amounts of structured data. It’s more complex than local or session storage but allows for more powerful storage capabilities.",
+            "IndexedDB: A low-level API for storing large amounts of structured data. It’s more complex than local or session storage but allows for more powerful storage capabilities.",
 
-      "WebSQL: An SQL-based database for client-side storage. Deprecated and not recommended for new projects.",
+            "WebSQL: An SQL-based database for client-side storage. Deprecated and not recommended for new projects.",
 
-      "Storage Limits: Different browsers have varying limits on the amount of data that can be stored. Generally, local storage and session storage can hold around 5-10MB per origin.",
+            "Storage Limits: Different browsers have varying limits on the amount of data that can be stored. Generally, local storage and session storage can hold around 5-10MB per origin.",
 
-      "Security: Data stored in local storage, session storage, and cookies can be accessed via JavaScript, so sensitive information should be stored securely and encrypted if necessary.",
+            "Security: Data stored in local storage, session storage, and cookies can be accessed via JavaScript, so sensitive information should be stored securely and encrypted if necessary.",
 
-      "Synchronous vs. Asynchronous: Local storage and session storage are synchronous operations, which means they can block the main thread. IndexedDB operations, on the other hand, are asynchronous.",
-    ],
-  },
+            "Synchronous vs. Asynchronous: Local storage and session storage are synchronous operations, which means they can block the main thread. IndexedDB operations, on the other hand, are asynchronous.",
+        ],
+    },
 ];
 
 const articles = [
-  {
-    chapterIndex: 0,
-    articles: [
-      "The History of C Programming",
-      "Understanding Memory Management in C",
-      "Best Practices for Writing Clean C Code",
-    ],
-  },
-  {
-    chapterIndex: 1,
-    articles: ["", ""],
-  },
-  {
-    chapterIndex: 2,
-    articles: ["", ""],
-  },
+    {
+        chapterIndex: 0,
+        articles: [
+            "The History of C Programming",
+            "Understanding Memory Management in C",
+            "Best Practices for Writing Clean C Code",
+        ],
+    },
+    {
+        chapterIndex: 1,
+        articles: ["", ""],
+    },
+    {
+        chapterIndex: 2,
+        articles: ["", ""],
+    },
 ];
 
 window.addEventListener("DOMContentLoaded", () => {
-  // Initialize tab switching functionality
-  handleTabSwitching();
+    // Initialize tab switching functionality
+    handleTabSwitching();
 
-  // Render chapters in the sidebar
-  renderChapters(chapters);
+    // Render chapters in the sidebar
+    renderChapters(chapters);
 
-  // Set chapter link listeners
-  setChapterLinkListeners(chapters, practiceQuestions, notes, articles);
+    // Set chapter link listeners
+    setChapterLinkListeners(chapters, practiceQuestions, notes, articles);
 });
