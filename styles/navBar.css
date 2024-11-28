@@ -13,12 +13,14 @@
 }
 
 .logo a img {
-    width: 13vw;
+    width: 12vw;
 }
 
 .nav-route {
     width: 100%;
     display: flex;
+    justify-content: center;
+    padding: 0;
     gap: 12px;
     list-style: none;
     /* padding-right: 30px; */
