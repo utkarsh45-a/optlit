@@ -858,25 +858,19 @@ const articles = [
     {
         chapterIndex: 0,
         articles: [
-            "The History of C Programming",
-            "Understanding Memory Management in C",
-            "Best Practices for Writing Clean C Code"
+
         ]
     },
     {
         chapterIndex: 1,
         articles: [
-            "Understanding Data Types in C",
-            "How Variables Work in C",
-            "Introduction to C Operators"
+
         ]
     },
     {
         chapterIndex: 2,
         articles: [
-            "Mastering Control Flow in C",
-            "How to Use Loops in C Efficiently",
-            "Advanced If-Else and Switch Statements"
+
         ]
     }
 ];

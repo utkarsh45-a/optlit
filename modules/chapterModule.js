@@ -11,9 +11,13 @@ export function handleTabSwitching() {
 
 			contents.forEach(content => content.classList.remove('active-content'));
 			contents[index].classList.add('active-content');
+
+			// Update sidebar chapter links based on the active tab
+			updateSidebarLinks(tab.id);
 		});
 	});
 }
+
 
 // Function to render chapters in the sidebar
 export function renderChapters(chapters) {
@@ -23,9 +27,32 @@ export function renderChapters(chapters) {
 		const li = document.createElement("li");
 		const a = document.createElement("a");
 		a.setAttribute("data-chapter", index);
+		a.setAttribute("href", "#docs-content"); // Default to Docs tab
+		a.setAttribute("class", "side-bar-link");
 		a.innerHTML = chapter.title;
 		li.appendChild(a);
 		chapterList.appendChild(li);
+	});
+}
+
+// Function to handle scrolling based on the active tab
+export function updateSidebarLinks(currentTab) {
+	const sidebarLinks = document.querySelectorAll(".side-bar-link");
+
+	sidebarLinks.forEach(link => {
+		switch (currentTab) {
+			case "docs-tab":
+				link.setAttribute("href", "#docs-content");
+				break;
+			case "practice-tab":
+				link.setAttribute("href", "#practice-content");
+				break;
+			case "notes-tab":
+				link.setAttribute("href", "#notes-content");
+				break;
+			default:
+				link.setAttribute("href", "#docs-content"); // Fallback to Docs tab
+		}
 	});
 }
 
@@ -41,6 +68,7 @@ export function loadChapterContent(
 	const chapterContent = document.getElementById('chapter-content');
 	const chapterCode = document.getElementById('chapter-code');
 	const practiceQuestionsList = document.getElementById('practice-questions-list');
+	const practiceContent = document.querySelector("#practice-content")
 	const notesList = document.getElementById('notes-list');
 	const articlesList = document.getElementById('articles-list');
 	const chapterLinks = document.querySelectorAll('#chapter-list a');
@@ -49,6 +77,7 @@ export function loadChapterContent(
 	chapterTitle.innerHTML = chapter.title;
 	chapterContent.innerHTML = chapter.content;
 	chapterCode.textContent = chapter.code?.trim();
+
 
 	// Add active class in sidebar chapter name
 	chapterLinks.forEach(link => link.classList.remove('active'));
@@ -108,3 +137,6 @@ export function setChapterLinkListeners(chapters, practiceQuestions, notes, arti
 	// Load the first chapter by default
 	loadChapterContent(currentChapterIndex, chapters, practiceQuestions, notes, articles);
 }
+
+
+
