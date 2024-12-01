@@ -1,6 +1,5 @@
 import express from "express";
 import connectDB from "./connectDb.js";
-import mongoose from "mongoose";
 import User from "./models/userModel.js";
 import bcrypt from "bcrypt";
 import cors from "cors";
@@ -51,19 +50,17 @@ app.post("/signup", async (req, res) => {
 
 app.post("/login", async (req, res) => {
 	const { email, password } = req.body;
-	console.log(email, password)
 
 	// Find the user
 	try {
 		const user = await User.findOne({ email });
-		console.log(user)
 		if (!user) {
 			return res.status(400).send('Invalid email');
 		}
 
 		// Compare passwords
 		const isMatch = await bcrypt.compare(password, user.password);
-		console.log(isMatch)
+
 		if (!isMatch) {
 			return res.status(400).send('Invalid password');
 		}

@@ -3,15 +3,6 @@
 import { shToast, success } from "../modules/toast";
 
 
-
-// const loginBtn = document.querySelector(".login-btn")
-
-// loginBtn.addEventListener('click', () => {
-//     shToast("login form not availabe", danger, "black")
-// })
-
-// ----------------------------------------------------------------------
-
 const loginForm = document.querySelector("#login-form");
 
 loginForm.addEventListener("submit", async (e) => {

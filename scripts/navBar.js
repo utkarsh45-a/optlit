@@ -2,6 +2,7 @@ const menuOpen = document.querySelector(".menu-open");
 const navlists = document.querySelector(".nav-lists");
 const menuClose = document.querySelector(".menu-close");
 const navBtn = document.querySelector(".nav-btns");
+const loggedIn = document.querySelector(".logged-in")
 
 document.addEventListener("DOMContentLoaded", () => {
     const userName = localStorage.getItem("userName");
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Create logged-in content
         navBtn.innerHTML = `
             <span class="user-name">Welcome, ${userName}</span>
-            <button class="btn btn-secondary logout-btn">Logout</button>
+            <button class="btn btn-danger logout-btn">Logout</button>
         `;
 
         // Attach logout functionality
@@ -24,12 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.removeItem("userName"); // Clear user data
             location.reload(); // Reload to reset navbar
         });
-    } else {
-        // Create login/signup content
-        navBtn.innerHTML = `
-            <a href="${baseUrl}/login.html"><button class="btn btn-primary login btn-size">Login</button></a>
-            <a href="${baseUrl}/signup.html"><button class="btn btn-primary btn-size">Signup</button></a>
-        `;
     }
 
     // Make the nav-btns visible after determining the state

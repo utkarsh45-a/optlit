@@ -1,4 +1,6 @@
 
+const userName = localStorage.getItem("userName");
+
 // Function to handle tab switching
 export function handleTabSwitching() {
 	const tabs = document.querySelectorAll('.tabs ul li');
@@ -69,6 +71,7 @@ export function loadChapterContent(
 	const chapterCode = document.getElementById('chapter-code');
 	const practiceQuestionsList = document.getElementById('practice-questions-list');
 	const practiceContent = document.querySelector("#practice-content")
+	const notesContent = document.querySelector("#notes-content")
 	const notesList = document.getElementById('notes-list');
 	const articlesList = document.getElementById('articles-list');
 	const chapterLinks = document.querySelectorAll('#chapter-list a');
@@ -83,35 +86,50 @@ export function loadChapterContent(
 	chapterLinks.forEach(link => link.classList.remove('active'));
 	chapterLinks[index].classList.add('active');
 
-	// Load practice questions with "Show Solution" feature
-	practiceQuestionsList.innerHTML = '';
-	practiceQuestions[index].questions.forEach(q => {
-		const li = document.createElement('li');
-		li.classList.add('practice-question');
-		li.innerHTML = `
-            <strong>${q.question}</strong><br/>
-            <button class="show-solution-btn">Show Solution</button>
-            <pre class="solution" style="display: none;"><code>${q.solution}</code></pre>
-        `;
-		practiceQuestionsList.appendChild(li);
+	// Check if the user is logged in
+	if (userName) {
+		// Show the practice tab content
+		// practiceContent.style.display = "block";
 
-		// Add event listener for "Show Solution" button
-		const showSolutionBtn = li.querySelector('.show-solution-btn');
-		const solutionBox = li.querySelector('.solution');
-		showSolutionBtn.addEventListener('click', () => {
-			const isSolutionVisible = solutionBox.style.display === 'block';
-			solutionBox.style.display = isSolutionVisible ? 'none' : 'block';
-			showSolutionBtn.textContent = isSolutionVisible ? 'Show Solution' : 'Hide Solution';
+		// Load practice questions with "Show Solution" feature
+		practiceQuestionsList.innerHTML = '';
+		practiceQuestions[index].questions.forEach(q => {
+			const li = document.createElement('li');
+			li.classList.add('practice-question');
+			li.innerHTML = `
+				<strong>${q.question}</strong><br/>
+				<button class="show-solution-btn">Show Solution</button>
+				<pre class="solution" style="display: none;"><code>${q.solution}</code></pre>
+			`;
+			practiceQuestionsList.appendChild(li);
+
+			// Add event listener for "Show Solution" button
+			const showSolutionBtn = li.querySelector('.show-solution-btn');
+			const solutionBox = li.querySelector('.solution');
+			showSolutionBtn.addEventListener('click', () => {
+				const isSolutionVisible = solutionBox.style.display === 'block';
+				solutionBox.style.display = isSolutionVisible ? 'none' : 'block';
+				showSolutionBtn.textContent = isSolutionVisible ? 'Show Solution' : 'Hide Solution';
+			});
 		});
-	});
+	} else {
+		// Hide the practice tab content and display a message
+		// practiceContent.style.display = "none";
+		practiceContent.innerHTML = "<p style='color: red; font-size: 16px; font-weight: bold; margin: 10px 20px;'>Please log in to access practice questions.</p>"
+
+	}
 
 	// Load notes
-	notesList.innerHTML = '';
-	notes[index].notes.forEach(note => {
-		const li = document.createElement('li');
-		li.textContent = note;
-		notesList.appendChild(li);
-	});
+	if (userName) {
+		notesList.innerHTML = '';
+		notes[index].notes.forEach(note => {
+			const li = document.createElement('li');
+			li.textContent = note;
+			notesList.appendChild(li);
+		});
+	} else {
+		notesContent.innerHTML = "<p style='color: red; font-size: 16px; font-weight: bold; margin: 10px 20px;'>Please log in to access practice questions.</p>"
+	}
 
 	// Load articles
 	articlesList.innerHTML = '';

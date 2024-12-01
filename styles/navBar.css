@@ -296,3 +296,12 @@
         font-size: 0.75rem;
     }
 }
+
+
+/* ---------------user loggedin----------------- */
+
+.user-name {
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
