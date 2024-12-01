@@ -1,7 +1,7 @@
-import { shToast, danger } from "../modules/toast"
+// import { shToast, danger } from "../modules/toast"
 
-const loginBtn = document.querySelector(".login-btn")
+// const loginBtn = document.querySelector(".login-btn")
 
-loginBtn.addEventListener('click', () => {
-    shToast("login form not availabe", danger, "black")
-})
+// loginBtn.addEventListener('click', () => {
+//     shToast("login form not availabe", danger, "black")
+// })

@@ -77,13 +77,13 @@
                 <p>or use your email for registration:</p>
 
                 <!-- Form for name, email, and password input fields -->
-                <form>
+                <form id="signupForm">
                     <!-- Name input field -->
-                    <input type="text" placeholder="Name" required>
+                    <input type="text" placeholder="Name" name="username" id="username" required>
                     <!-- Email input field -->
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" placeholder="Email" name="email" id="email" required>
                     <!-- Password input field -->
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Password" name="password" id="password" required>
                     <!-- Sign-up button -->
                     <button type="submit" class="sign-up-btn">SIGN UP</button>
                 </form>
@@ -156,6 +156,6 @@
     <!-- navBar  -->
     <script src="../scripts/navBar.js"></script>
     <!-- signup -->
-    <script src="../scripts/signUp.js"></script>
+    <script type="module" src="../scripts/signUp.js"></script>
 
 </html>
