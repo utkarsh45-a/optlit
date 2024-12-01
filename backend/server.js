@@ -3,6 +3,7 @@ import connectDB from "./connectDb.js";
 import mongoose from "mongoose";
 import User from "./models/userModel.js";
 import bcrypt from "bcrypt";
+import cors from "cors";
 const app = express();
 
 //connecting database
@@ -12,6 +13,7 @@ connectDB();
 // Middleware to parse form data
 app.use(express.urlencoded({ extended: true })); // For form data (x-www-form-urlencoded)
 app.use(express.json()); // For JSON payloads
+app.use(cors());
 
 app.get("/", (req, res) => {
 	res.send("home")
@@ -44,6 +46,36 @@ app.post("/signup", async (req, res) => {
 		res.status(500).send('Internal server error');
 	}
 })
+
+// -----------------------------------------------------------------------
+
+app.post("/login", async (req, res) => {
+	const { email, password } = req.body;
+	console.log(email, password)
+
+	// Find the user
+	try {
+		const user = await User.findOne({ email });
+		console.log(user)
+		if (!user) {
+			return res.status(400).send('Invalid email');
+		}
+
+		// Compare passwords
+		const isMatch = await bcrypt.compare(password, user.password);
+		console.log(isMatch)
+		if (!isMatch) {
+			return res.status(400).send('Invalid password');
+		}
+
+		// Authentication successful
+		res.status(200).json({ message: 'Login successful!', name: user.username });
+
+	} catch (error) {
+		console.log(error)
+	}
+})
+
 
 app.listen(3000, () => {
 	console.log("server started");
