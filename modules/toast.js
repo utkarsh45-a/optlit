@@ -1,26 +1,26 @@
 import Toastify from 'toastify-js'
 import "toastify-js/src/toastify.css"
 
-export const success = "linear-gradient(to right, #00b09b, #96c93d)"  //green
-export const warning = "linear-gradient(to right, #f57c00, #fbc02d)"  //yellow/orange
-export const info = "linear-gradient(to right, #ffeb3b, #ffc107)"   //yellow
-export const danger = "linear-gradient(to right, #ff5f6d, #ffc371)"   //red
-export const primary = "linear-gradient(to right, #2196f3, #00bcd4)"   //blue
+export const success = "rgb(25, 135, 84)"  //green
+export const warning = "rgb(255, 193, 7)"  //yellow/orange
+export const info = "rgb(13, 202, 240)"   //yellow
+export const danger = "rgb(220, 53, 69)"   //red
+export const primary = "rgb(13, 110, 253)"   //blue
 
 
 
 // we use this for giving instruction to user when any event occur(like registration successful , failed, etc).
 
-export const shToast = (text, bgColor, color = "white") => {
+export const shToast = (text, bgColor, color = "white", destination = "null", duration = 3000) => {
 
     Toastify({
         text: `${text}`,
-        duration: 3000,
-        // destination: "https://github.com/apvarun/toastify-js",
-        newWindow: true,
+        duration: `${duration}`,
+        destination: `${destination}`,
+        // newWindow: true,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
+        gravity: "bottom", // `top` or `bottom`
+        position: "center", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
             background: `${bgColor}`,

@@ -1,3 +1,4 @@
+import { info, shToast } from "./toast";
 
 const userName = localStorage.getItem("userName");
 
@@ -128,7 +129,8 @@ export function loadChapterContent(
 			notesList.appendChild(li);
 		});
 	} else {
-		notesContent.innerHTML = "<p style='color: red; font-size: 16px; font-weight: bold; margin: 10px 20px;'>Please log in to access practice questions.</p>"
+		notesContent.innerHTML = "<p style='color: red; font-size: 16px; font-weight: bold; margin: 10px 20px;'>Please log in to access notes.</p>"
+		shToast("Click here to log in to access practice questions and notes.", info, "black", "http://localhost:5173/pages/login.html", 0)
 	}
 
 	// Load articles

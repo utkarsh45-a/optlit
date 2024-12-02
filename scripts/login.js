@@ -1,6 +1,6 @@
 // import { shToast, danger } from "../modules/toast"
 
-import { shToast, success } from "../modules/toast";
+import { danger, shToast, success } from "../modules/toast";
 
 
 const loginForm = document.querySelector("#login-form");
@@ -29,17 +29,14 @@ loginForm.addEventListener("submit", async (e) => {
 
 		if (response.ok) {
 			const result = await response.json(); // Parse JSON response
-			shToast("login successfull", success, "black")
-			console.log("Login Response:", result);
-
 			// Store user's name in localStorage
 			localStorage.setItem("userName", result.name);
 
 			loginForm.reset(); // Clear form fields
-			location.reload()
+			window.location.href = "http://localhost:5173/index.html?toast=login-success";
 		} else {
 			const errorText = await response.text();
-			console.log(errorText);
+			shToast(errorText, danger)
 		}
 
 	} catch (error) {
@@ -47,3 +44,4 @@ loginForm.addEventListener("submit", async (e) => {
 	}
 
 })
+
