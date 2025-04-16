@@ -33,6 +33,16 @@
                         <li><a class="nav-links" href="#courses">Courses</a></li>
                         <li><a class="nav-links" href="./pages/about.html">About us</a></li>
                         <li><a class="nav-links" href="./pages/contact.html">Contact</a></li>
+                        
+                        <!-- <label class="nav-links" for="pageSelect"></label> -->
+                        <select id="pageSelect"   onchange="goToPage()">
+                            <option value=""> Quiz</option>
+                            <option value="./pages/c.html">C language</option>
+                            <option value="./pages/java.html">Java</option>
+                            <option value="./pages/os.html">OS</option>
+                            <option value="./pages/networking.html">Networking</option>
+                            <option value="./pages/webdev.html">Development</option>
+                          </select>
                     </ul>
                     <div class="nav-btns">
                         <a href="./pages/login.html"><button class="btn btn-primary login btn-size">Login</button></a>
@@ -195,6 +205,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script>
+            
+  function goToPage() {
+    const select = document.getElementById("pageSelect");
+    const selectedValue = select.value;
+
+    if (selectedValue) {
+      window.location.href = selectedValue;
+    }
+  }
+
+        </script>
 </body>
 
 </html>

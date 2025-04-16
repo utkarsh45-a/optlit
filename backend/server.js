@@ -46,7 +46,7 @@ app.post("/signup", async (req, res) => {
 	}
 })
 
-// -----------------------------------------------------------------------
+//   -----------------------------------------------------------------------
 
 app.post("/login", async (req, res) => {
 	const { email, password } = req.body;
@@ -57,8 +57,7 @@ app.post("/login", async (req, res) => {
 		if (!user) {
 			return res.status(400).send('Invalid email');
 		}
-
-		// Compare passwords
+        // Compare passwords
 		const isMatch = await bcrypt.compare(password, user.password);
 
 		if (!isMatch) {

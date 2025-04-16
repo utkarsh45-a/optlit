@@ -16,6 +16,14 @@
     width: 12vw;
 }
 
+#pageSelect{
+    color: #333;
+    border: none;
+    background-color:#f5f5f5;
+}
+#pageSelect:hover{
+    border: none;
+}
 .nav-route {
     width: 100%;
     display: flex;
