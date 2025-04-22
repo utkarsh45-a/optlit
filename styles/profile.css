@@ -1,0 +1,235 @@
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f3f4f6;
+            /* padding: 20px; */
+            color: #333;
+        }
+
+        .main-wrapper {
+            margin-top: 3px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .profile-container,
+        .todo-container {
+            width: 100%;
+        }
+
+        @media (min-width: 900px) {
+            .main-wrapper {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+            .profile-container {
+                width: 65%;
+            }
+
+            .todo-container {
+                width: 35%;
+            }
+        }
+
+        .profile-container {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            height: auto;
+        }
+
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .profile-header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #007BFF;
+        }
+
+        .profile-header h1 {
+            margin-top: 15px;
+            font-size: 24px;
+        }
+
+        .profile-header p {
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .stats {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            gap: 15px;
+        }
+
+        .stat {
+            background: #f9fafb;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat h2 {
+            font-size: 22px;
+            color: #007BFF;
+        }
+
+        .stat p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .courses {
+            margin-top: 30px;
+        }
+
+        .course-card {
+            background: #f1f5f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .course-card h3 {
+            margin-bottom: 6px;
+        }
+
+        .course-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        @media (min-width: 600px) {
+            .profile-header {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            .profile-header img {
+                margin-right: 30px;
+            }
+
+            .stats {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .stat {
+                flex: 1;
+            }
+
+            .course-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .todo-container {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+            max-height: 100%;
+        }
+
+        .todo-container h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #007BFF;
+        }
+
+        .todo-list {
+            flex: 3.5;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            overflow-y: auto;
+            padding-right: 8px;
+            max-height: 400px;
+        }
+
+        #writingpad {
+            border: none;
+            font-size: 15px;
+            background-color: #f9fafb;
+            width: 100%;
+        }
+
+        #writingpad:focus {
+            outline: none;
+        }
+
+        .todo_box {
+            flex: 1;
+            display: flex;
+        }
+
+        .todo-item {
+            display: flex;
+            align-items: center;
+            background-color: #f9fafb;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            height: auto;
+        }
+
+        .controls {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .controls>button {
+            margin-top: 1rem;
+            font-size: 1rem;
+            background-color: aqua;
+            color: #212121;
+            padding: 0.4rem;
+            border-radius: 47%;
+        }
+
+        .todo-item input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+            accent-color: #007BFF;
+        }
+
+        .todo-item label {
+            font-size: 15px;
+            word-break: break-word;
+            white-space: pre-wrap;
+            overflow-wrap: break-word;
+        }
+
+        #delete {
+            margin-left: 3rem;
+            background-color: #007BFF;
+            color: white;
+            padding: 5px;
+            border-radius: 46%;
+        }
+
+        #writingpad:empty:before {
+            content: attr(data-placeholder);
+            color: #888;
+            font-style: italic;
+        }
+   

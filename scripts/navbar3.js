@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // Create logged-in content
         navBtn.innerHTML = `
        
-        <a href="../pages/profile.html">
-            <img class="profile" src="../public/download (1).png" alt="Profile" height="40px" width="40px" style="border-radius: 50%; margin-left: 10px;">
+        <a href="../../../pages/profile.html">
+            <img class="profile" src="../../../public/download (1).png" alt="Profile" height="40px" width="40px" style="border-radius: 50%; margin-left: 10px;">
         </a>
         <button class="btn btn-danger logout-btn" style="margin-left: 10px;">Logout</button>
     `;

@@ -31,3 +31,4 @@ window.addEventListener("DOMContentLoaded", () => {
         window.history.replaceState({}, "", url);
     }
 });
+

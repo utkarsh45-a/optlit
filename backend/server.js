@@ -3,6 +3,7 @@ import connectDB from "./connectDb.js";
 import User from "./models/userModel.js";
 import bcrypt from "bcrypt";
 import cors from "cors";
+import validuser from "./validatete.js"
 const app = express();
 
 //connecting database
@@ -20,10 +21,15 @@ app.get("/", (req, res) => {
 
 app.post("/signup", async (req, res) => {
 	try {
+		const validation = validuser(req.body);
+
+          if (!validation.valid) {
+           return res.status(400).json({ error: validation.error });
+		  }
 		const { username, email, password } = req.body;
 
 		// Check if the user already exists
-		const existingUser = await User.findOne({ username });
+		const existingUser = await User.findOne({ email });
 		if (existingUser) {
 			return res.status(400).send('User already exists');
 		}
@@ -49,15 +55,25 @@ app.post("/signup", async (req, res) => {
 //   -----------------------------------------------------------------------
 
 app.post("/login", async (req, res) => {
-	const { email, password } = req.body;
+	// const validation = validuser(req.body);
 
+	// if (!validation.valid) {
+	//   return res.status(400).json({ error: validation.error });
+	// }
+	const { email, password } = req.body;
+	
 	// Find the user
 	try {
 		const user = await User.findOne({ email });
 		if (!user) {
 			return res.status(400).send('Invalid email');
 		}
-        // Compare passwords
+		if(email!==user.email){
+			return res.status(400).send('Invalid credentials');
+               }
+                            
+		
+			   // Compare passwords
 		const isMatch = await bcrypt.compare(password, user.password);
 
 		if (!isMatch) {
