@@ -8,7 +8,7 @@ import mongoose from "mongoose";
 const connectDB = async () => {
 	try {
 		// await mongoose.connect("mongodb://127.0.0.1:27017/optlit")
-		await mongoose.connect("mongodb+srv://AMU4518:amu%404518@nexus.0ih8ymq.mongodb.net/optlit?retryWrites=true&w=majority&tls=true");
+		await mongoose.connect("enter your cluster string");
 		console.log("connected to db")
 	} catch (error) {
 		console.log(`connection faild ${error}`)
